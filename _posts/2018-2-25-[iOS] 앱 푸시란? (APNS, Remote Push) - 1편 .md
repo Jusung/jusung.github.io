@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "iOS앱 푸시란? (APNS, Remote Push)"
-description: "hi"
 tags: [iOS]
 comments: true
 ---

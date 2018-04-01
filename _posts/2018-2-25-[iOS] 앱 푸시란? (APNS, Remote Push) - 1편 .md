@@ -1,3 +1,10 @@
+---
+layout: post
+title: "앱 푸스란? (APNS, Remote Push)"
+tags: [iOS]
+comments: true
+---
+
 이 포스트에서는 iOS의 Remote Push에 대해 알아 보겠습니다.
 
 이 포스트는 Remote Push에 대한 전체 구조에 초점이 맞춰져 있어 관련한 구체적 코드 및 Local Push에 대해서는 다루지 않습니다. Push 관련 코드와 Local Push에 대해 궁금하신 분은 [애플 문서](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/index.html#//apple_ref/doc/uid/TP40008194-CH3-SW1)를 참조하시면 될 것 같습니다.

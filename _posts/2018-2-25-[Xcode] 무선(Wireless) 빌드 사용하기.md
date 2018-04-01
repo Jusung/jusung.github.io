@@ -1,3 +1,10 @@
+---
+layout: post
+title: "Xcode 무선(Wireless) 빌드 사용하기"
+tags: [Xcode]
+comments: true
+---
+
 Xcode9 부터 맥과 기기(iPhone, iPad 등)를 케이블로 연결하지 않고, 기기에 바로 빌드 할 수 있는 기능이 추가되었습니다. 이 포스트에서는 이 기능을 사용하는 방법에 대해 알아보겠습니다.
 
 이 기능을 사용하기 위해서는 **Xcode9 이상** , 디바이스가 **iOS11 이상** 이어야합니다.  

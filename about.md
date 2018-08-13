@@ -4,4 +4,26 @@ title: About
 permalink: /about/
 ---
 
-준비중입니다. 곧 찾아 뵙도록 하겠습니다.
+## About Me
+
+안녕하세요? 
+
+저는 소프트웨어 개발 장인(Master)이 되고자 수련 중인 견습생(Apprentice)입니다.
+
+2010년 부터 현재까지 iOS/macOS 앱을 개발하고 있습니다.
+
+글을 읽는 것과 쓰는 것을 좋아합니다.
+
+출판 : 창업이야기 : [http://kyejusung.com/mybook/](http://kyejusung.com/mybook/) 
+
+## About This Blog
+이 블로그는 제 개인적인 경험, 생각 등을 공유하는 공간입니다. 
+
+저는 크리스천이어서 신앙과 관련된 포스팅도 게시될 수 있습니다. 
+
+제 글이 읽는 분께 조금이나마 도움이 되면 좋겠습니다. 
+
+이 블로그 외에 개발 관련 된 블로그도 운영 중이니 관심있으신 분은 방문해 보시면 좋을 것 같습니다.
+
+* iOS개발 블로그 : [http://jusung.github.io/ios](http://jusung.github.io/ios)
+* Swift 블로그 : [http://jusung.github.io/swift](http://jusung.github.io/swift)

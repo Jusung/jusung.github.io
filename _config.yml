@@ -27,6 +27,8 @@ navigation:
     url: /archive
   - name: Tags
     url: /tags
+  - name: RSS Feed
+    url: https://jusung.github.io/feed.xml
 
 # Pagination
 paginate: 5

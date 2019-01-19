@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "컴파일러 지시자 #warning, #error"
+title: "[Swift 4.2] 컴파일러 지시자 #warning, #error"
 tags: 
-  - Swift 4.2
+  - Swift
 comments: true
 published: true
 ---

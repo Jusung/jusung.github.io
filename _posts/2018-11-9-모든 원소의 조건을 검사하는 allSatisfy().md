@@ -2,7 +2,7 @@
 layout: post
 title: "[Swift] 4.2에서 추가된 allSatisfy() 매소드"
 tags: 
-  - Swift 4.2
+  - Swift, Swift 4.2
 comments: true
 published: true
 ---

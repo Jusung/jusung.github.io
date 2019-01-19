@@ -2,7 +2,7 @@
 layout: post
 title: "Bool 값을 반전시키는 toggle()"
 tags: 
-  - Swift 4.2
+  - Swift, Swift 4.2
 comments: true
 published: true
 ---

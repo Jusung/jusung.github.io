@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Swift] 4.2에서 추가된 allSatisfy() 매소드"
+title: "[Swift 4.2] allSatisfy() 매소드"
 tags: 
   - Swift
 comments: true

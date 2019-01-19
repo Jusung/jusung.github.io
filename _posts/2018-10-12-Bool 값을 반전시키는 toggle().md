@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Bool 값을 반전시키는 toggle()"
+title: "[Swift 4.2] Bool 값을 반전시키는 toggle()"
 tags: 
-  - Swift, Swift 4.2
+  - Swift
 comments: true
 published: true
 ---

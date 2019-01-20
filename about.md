@@ -17,13 +17,8 @@ permalink: /about/
 출판 : 창업이야기 : [http://kyejusung.com/mybook/](http://kyejusung.com/mybook/)
 
 ## This Blog
-이 블로그는 제 개인적인 경험, 생각 등을 공유하는 공간입니다.
+이 블로그는 iOS앱 관련 지식과 제 개인적인 경험 및 생각 등을 공유하는 공간입니다.
 
 저는 크리스천이어서 신앙과 관련된 포스팅도 게시될 수 있습니다.
 
 제 글이 읽는 분께 조금이나마 도움이 되면 좋겠습니다.
-
-이 블로그 외에 개발 관련 된 블로그도 운영 중이니 관심있으신 분은 방문해 보시면 좋을 것 같습니다.
-
-* iOS개발 블로그 : [http://jusung.github.io/ios](http://jusung.github.io/ios)
-* Swift 블로그 : [http://jusung.github.io/swift](http://jusung.github.io/swift)

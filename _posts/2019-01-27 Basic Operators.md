@@ -2,7 +2,7 @@
 layout: post
 title: "[Swift] 기본 연산자 (Basic Operators)"
 tags: 
-  - Swift 공식문서 번역
+  - Swift
 comments: true
 published: true
 ---

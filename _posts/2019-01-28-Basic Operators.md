@@ -306,9 +306,9 @@ range.contains(-1)  // true
 
 Swift에서는 세가지 표준 논리 연산자를 지원합니다.
 
-* 논리 부정 NOT (!a)
-* 논리 합 AND (a && b)
-* 논리 곱 OR (a || b)
+* 논리 부정 NOT `(!a)`
+* 논리 합 AND `(a && b)`
+* 논리 곱 OR `(a || b)`
 
 ### 논리 부정 연산자(Logical NOT Operator)
 
@@ -359,7 +359,7 @@ if enteredDoorCode && passedRetinaScan || hasDoorKey || knowsOverridePassword {
 // Prints "Welcome!"
 ```
 
-> Swift의 논리 연산자 && 와 || 는 왼쪽의 표현을 우선해서 논리 계산을 합니다.
+> Swift의 논리 연산자 `&&` 와 `||` 는 왼쪽의 표현을 우선해서 논리 계산을 합니다.
  
 ### 명시적 괄호(Explicit Parentheses)
 

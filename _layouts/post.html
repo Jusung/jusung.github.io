@@ -10,6 +10,16 @@ layout: default
       {{ page.date | date: "%Y-%m-%d" }}
     </span>
 
+    <ul class="category">
+      {% for category in page.categories %}
+      <li>
+        <a href="{{ site.url }}{{ site.baseurl }}/categories#{{ category }}">
+          {{ category }}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+
     <ul class="tag">
       {% for tag in page.tags %}
       <li>

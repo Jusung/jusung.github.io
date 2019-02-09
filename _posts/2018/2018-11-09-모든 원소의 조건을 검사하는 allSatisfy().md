@@ -2,7 +2,7 @@
 layout: post
 title: "[Swift] allSatisfy() 매소드"
 category:
-  - Swift
+  - Swift, Objective-C
 tags: 
   - Swift 4.2
 comments: true

@@ -4,7 +4,7 @@ title: "[Swift] allSatisfy() 매소드"
 category:
   - Swift
 tags: 
-  - #Swift 4.2
+  - # Swift 4.2
 comments: true
 published: true
 ---

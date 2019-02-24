@@ -9,7 +9,7 @@ comments: true
 published: true
 ---
 
-Swift 5.0에서 주요한 피처는 ABI stability의 지원이라고 할 수 있습니다. <br/> 
+Swift 5.0에서 가장 중요한 피처는 ABI stability의 지원이라고 할 수 있습니다. <br/> 
 이번 포스트에서는 이 ABI stability 대해 알아보도록 하겠습니다.
 
 ## ABI란? 

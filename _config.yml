@@ -111,3 +111,5 @@ exclude:
   - CNAME
 
 theme: jekyll-theme-cayman
+
+future: false

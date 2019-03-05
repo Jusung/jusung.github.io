@@ -68,7 +68,7 @@ let guide = #"The price of the shoes is \#(price)."#
 ```swift
 let url = "https://apple.com"
 
-let html1 = ("<a href=\"\(url)\" title=\"Apple Developer\">")
+let html1 = "<a href=\"\(url)\" title=\"Apple Developer\">"
 var html2 = #"<a href="\#(url)" title="Apple Developer">"#
 ```
 

@@ -33,7 +33,7 @@ let regex1 = "\\\\[A-Z]+[A-Za-z]+\\.[a-z]+"
 그렇다면 `"`나 `\`를 사용하기 위해 `\`를 추가하는 이런 추가적인 작업은 왜 필요한것 일까요? <br/>
 그 이유는 `"`와 `\`가 각각 문자열의 시작과 끝을 나타내는 경계 문자(String delimiters)와 이스케이프 문자(Escape characters)로 사용되기 때문입니다. 
 
-다시 말해 `"`는 문자열의 범위의 경계를 파악하기 위한 기호로 사용하고 있고, `\`는 이스케이프 문자로 문자열(string literals) 안에서 특별한 일을 처리하기 위해 사용하기 때문입니다.
+다시 말해 `"`는 문자열의 범위의 경계를 파악하기 위한 기호로 사용하고, `\`는 이스케이프 문자로 문자열(string literals) 안에서 특별한 일을 처리하기 위해 사용하기 때문입니다.
 
 이런 불편함을 해결하고자 Swift 5.0[(SE-0200)](https://github.com/apple/swift-evolution/blob/master/proposals/0200-raw-string-escaping.md) 에서는 문자열의 경계를 나타내는 새로운 경계 문자 `#"..."#` 를 추가한 **Raw String** 을 지원합니다. 무슨 말인지 잘 모르시겠다구요? 예제를 보겠습니다.
 
@@ -68,7 +68,7 @@ let guide = #"The price of the shoes is \#(price)."#
 ```swift
 let url = "https://apple.com"
 
-let html1 = ("<a href=\"\(url)\" title=\"Apple Developer\">")
+let html1 = "<a href=\"\(url)\" title=\"Apple Developer\">"
 var html2 = #"<a href="\#(url)" title="Apple Developer">"#
 ```
 

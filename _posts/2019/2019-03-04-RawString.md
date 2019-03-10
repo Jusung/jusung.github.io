@@ -1,10 +1,8 @@
 ---
 layout: post
-title: "[Swift] Raw String"
+title: "Raw String"
 category:
-  - Swift
-tags: 
-  - Swift5
+  - 5.0
 comments: true
 published: true
 ---

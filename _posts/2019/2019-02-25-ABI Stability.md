@@ -1,10 +1,8 @@
 ---
 layout: post
-title: "[Swift] ABI stability란?"
+title: "ABI stability란?"
 category:
-  - Swift
-tags: 
-  - Swift5
+  - 5.0
 comments: true
 published: true
 ---

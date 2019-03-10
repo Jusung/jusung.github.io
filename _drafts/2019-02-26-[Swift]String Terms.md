@@ -4,7 +4,7 @@ title: "[Swift] String 관련 용어 정리"
 category:
   - Swift
 tags: 
-  - Basic
+  - 기본
 comments: true
 published: true
 ---

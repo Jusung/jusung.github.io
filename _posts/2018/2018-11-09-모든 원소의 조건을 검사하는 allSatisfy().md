@@ -1,10 +1,8 @@
 ---
 layout: post
-title: "[Swift] allSatisfy() 매소드"
+title: "allSatisfy() 매소드"
 category:
-  - Swift
-tags: 
-  - Swift 4.2
+  - 4.2
 comments: true
 published: true
 ---

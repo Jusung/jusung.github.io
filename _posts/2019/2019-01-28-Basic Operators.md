@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "[Swift] 기본 연산자 (Basic Operators)"
+title: "기본 연산자 (Basic Operators)"
 tags: 
-  - Swift
+  - The Swift Programming Language (한국어)
 comments: true
 published: true
 ---

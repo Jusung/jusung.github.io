@@ -2,7 +2,7 @@
 layout: post
 title: "컴파일러 지시자 #warning, #error"
 category:
-  - 4.2
+  - Swift 4.2
 comments: true
 published: true
 ---

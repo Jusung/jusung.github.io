@@ -2,7 +2,7 @@
 layout: post
 title: "allSatisfy() 매소드"
 category:
-  - 4.2
+  - Swift 4.2
 comments: true
 published: true
 ---

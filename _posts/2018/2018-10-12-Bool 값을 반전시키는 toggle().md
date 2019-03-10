@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Swift 4.2] Bool 값을 반전시키는 toggle()"
+title: "Bool 값을 반전시키는 toggle()"
 category: 
   - 4.2
 comments: true

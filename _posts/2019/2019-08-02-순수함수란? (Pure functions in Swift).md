@@ -9,6 +9,12 @@ comments: true
 published: true
 ---
 
+## 참고
+이 포스트는 외부 포스트를 요약한 것입니다. 더 자세한 내용을 확인하고 싶으신 분은 원문을 참조하세요.
+
+**원문** : [Pure functions in Swift - by John Sundell](https://www.swiftbysundell.com/posts/pure-functions-in-swift)
+
+## 순수함수
 순수함수란 **외부 상태에 의존적이지 않고, 어떠한 사이드이펙트도 발생시키지 않는 함수**입니다.. 
 
 순수함수는 언제 얼마나 많이 호출해도 항상 같은 `input`에 대해 같은 `output`을 반환합니다. 순수함수라는 말이 이론적인 컨셉으로 보이지만 실제 다음과 같은 실용적인 이점이 있습니다.
@@ -118,9 +124,3 @@ class LoginControllerTests: XCTestCase {
 
 ## 결론
 코딩을 할때 앱 전체를 순수함수로만 구성하는 것은 매우 어렵습니다. 하지만 그렇게 하기만 하면 핵심 로직을 더 단단하게 만들고 테스트하기 쉽게 만들 수 있습니다.
-
-
-## 참고
-이 포스트는 외부 포스트를 요약한 것입니다. 더 자세한 내용을 확인하고 싶으신 분은 원문을 참조하세요.
-
-**원문** : [Pure functions in Swift - by John Sundell](https://www.swiftbysundell.com/posts/pure-functions-in-swift)

@@ -2,7 +2,9 @@
 layout: post
 title: "[Swift] 순수함수(Pure function)란?"
 category:
-  - Swift 5.0
+  - Swift
+tag:
+  - managing state & object
 comments: true
 published: true
 ---

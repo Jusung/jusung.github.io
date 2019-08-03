@@ -1,11 +1,20 @@
+---
+layout: post
+title: "[Swift] 순수함수(Pure function)란?"
+category:
+  - Swift 5.0
+comments: true
+published: true
+---
+
 순수함수란 **외부 상태에 의존적이지 않고, 어떠한 사이드이펙트도 발생시키지 않는 함수**입니다.. 
 
 순수함수는 언제 얼마나 많이 호출해도 항상 같은 `input`에 대해 같은 `output`을 반환합니다. 순수함수라는 말이 이론적인 컨셉으로 보이지만 실제 다음과 같은 실용적인 이점이 있습니다.
 
 **이점**
 
-	* 테스트가 용의하고, 재사용성이 올라감
-	* 예측가능성이 높아짐
+	- 테스트가 용의하고, 재사용성이 올라감
+	- 예측가능성이 높아짐
 
 예제를 통해 더 자세히 알아보죠.
 
@@ -91,11 +100,13 @@ class LoginControllerTests: XCTestCase {
         let controller = LoginController()
         
         XCTAssertEqual {
-            controller.makeFailureHelpText(numberOfAttemps: 0), "Invalid username/password. Please try again."
+            controller.makeFailureHelpText(numberOfAttemps: 0), 
+            "Invalid username/password. Please try again."
         }
         
         XCTAssertEqual {
-            controller.makeFailureHelpText(numberOfAttemps: 0), "Still can't log you in. Forgot your password?"
+            controller.makeFailureHelpText(numberOfAttemps: 0), 
+            "Still can't log you in. Forgot your password?"
         }
     }
 }

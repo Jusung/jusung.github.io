@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[Codility] Lesson3 (Time Complexity) - FrogJmp"
-tags: 
+category: 
   - Codility
 comments: true
 published: true

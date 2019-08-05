@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[Codility] Lesson2 (Arrays) - CyclicRotation"
-tags: 
+category: 
   - Codility
 comments: true
 published: true

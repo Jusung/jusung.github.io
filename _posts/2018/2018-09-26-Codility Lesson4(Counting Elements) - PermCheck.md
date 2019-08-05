@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[Codility] Lesson4 (Counting Elements) - PermCheck"
-tags: 
+category: 
   - Codility
 comments: true
 published: true

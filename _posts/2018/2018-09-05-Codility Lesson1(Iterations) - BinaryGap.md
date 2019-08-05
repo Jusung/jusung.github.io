@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[Codility] Lesson1 (Iterations) - BinaryGap"
-tags: 
+category: 
   - Codility
 comments: true
 published: true

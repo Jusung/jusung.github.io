@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[Codility] Lesson2 (Arrays) - OddOccurrencesInArray"
-tags: 
+category: 
   - Codility
 comments: true
 published: true

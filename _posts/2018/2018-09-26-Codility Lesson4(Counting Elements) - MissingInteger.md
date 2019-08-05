@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[Codility] Lesson4 (Counting Elements) - MissingInteger"
-tags: 
+category: 
   - Codility
 comments: true
 published: true

@@ -10,7 +10,7 @@ published: true
 이번 포스트에서는 Swift 5.1의 유용한 변화 2가지에 대해 살펴보겠습니다.
 
 ## 1. return 생략 (Implicit returns)
-1) `Swift 5.1`부터 함수나 클로저 안에  `return` 키워드를 생략 가능합니다.[^1] 단, 코드블럭 안에  `return`이 오직 한번만 사용될 때 생략 가능합니다. 보다 자세한 내용은 이 후 내용에서 확인하실 수 있습니다.
+`Swift 5.1`부터 함수나 클로저 안에  `return` 키워드를 생략 가능합니다.[^1] 단, 코드블럭 안에  `return`이 오직 한번만 사용될 때 생략 가능합니다. 자세한 내용은 이 후 내용에서 확인하실 수 있습니다.
 
 ```swift
 struct Student {
@@ -20,7 +20,7 @@ struct Student {
 }
 ```
 
-2) `computed-property`에서 다른 클래스의 매소드나 프로퍼티를 사용하는 곳에도 적용될 수 있습니다.
+`computed-property`에서 다른 클래스의 매소드나 프로퍼티를 사용하는 곳에도 적용될 수 있습니다.
 
 ```swift
 struct Student {
@@ -36,7 +36,7 @@ struct Apple {
 }
 ```
 
-2) 삼항연산자에서도 `return`을 한번 사용하기 때문에 `return` 을 생략 가능합니다.
+삼항연산자에서도 `return`을 한번 사용하기 때문에 `return` 을 생략 가능합니다.
 
 ```swift
 struct Student {
@@ -48,7 +48,7 @@ struct Student {
 }
 ```
 
-3) `if-else`  구문 등  `return`을 두번이상 사용하는 곳에서는 `return`을 생략할 수 없습니다.
+`if-else`  구문 등  `return`을 두번이상 사용하는 곳에서는 `return`을 생략할 수 없습니다.
 
 ```swift
 struct Student {

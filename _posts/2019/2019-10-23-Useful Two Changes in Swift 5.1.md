@@ -9,7 +9,7 @@ published: true
 
 이번 포스트에서는 Swift 5.1의 유용한 변화 2가지에 대해 살펴보겠습니다.
 
-## 1. 암시적 리턴 (Implicit returns)
+## 1. return 생략 (Implicit returns)
 1) `Swift 5.1`부터 함수나 클로저 안에  `return` 키워드를 생략 가능합니다.[^1] 단, 코드블럭 안에  `return`이 오직 한번만 사용될 때 생략 가능합니다. 보다 자세한 내용은 이 후 내용에서 확인하실 수 있습니다.
 
 ```swift
@@ -105,6 +105,6 @@ let company = Company(name: "Apple") // 디폴트 값이 있는 프로퍼티는 
 
 관련내용을 더 자세히 보고 싶으신 분은 다음 Swift Evolution 제안 링크를 참조하세요.
 
-[^1]: [Implicit returns from single-expression functions](https://github.com/apple/swift-evolution/blob/master/proposals/0255-omit-return.md){:target="_blank"}
+[^1]: [SE-0255 Implicit returns from single-expression functions](https://github.com/apple/swift-evolution/blob/master/proposals/0255-omit-return.md){:target="_blank"}
 
 [^2]: [SE-0242 Synthesize default values for the memberwise initializer](https://github.com/apple/swift-evolution/blob/master/proposals/0242-default-values-memberwise.md){:target="_blank"}

@@ -10,7 +10,7 @@ published: true
 이번 포스트에서는 Swift 5.1의 유용한 변화 2가지에 대해 살펴보겠습니다.
 
 ## 1. 암시적 리턴 (Implicit returns)
-1) `Swift 5.1`부터 함수나 클로저 안에  `return` 키워드를 생략 가능합니다. 단, 코드블럭 안에  `return`이 오직 한번만 사용될 때 생략 가능합니다. 보다 자세한 내용은 이 후 내용에서 확인하실 수 있습니다.
+1) `Swift 5.1`부터 함수나 클로저 안에  `return` 키워드를 생략 가능합니다.[^1] 단, 코드블럭 안에  `return`이 오직 한번만 사용될 때 생략 가능합니다. 보다 자세한 내용은 이 후 내용에서 확인하실 수 있습니다.
 
 ```swift
 struct Student {
@@ -93,7 +93,7 @@ let company = Company(name: "Apple", employees: 345000, isFAANG: true)
 // Swift 5.1 미만에서 자동 초기자의 사용
 ```
 
-Swift 5.1에서는 자동 초기자에 디폴트 값을 지원해서 다음과 같이 사용할 수 있습니다.
+Swift 5.1에서는 자동 초기자에 디폴트 값을 지원해서 다음과 같이 사용할 수 있습니다.[^2]
 
 ```swift
 let company = Company(name: "Apple") // 디폴트 값이 있는 프로퍼티는 초기화시 값할당이 생략 가능합니다.

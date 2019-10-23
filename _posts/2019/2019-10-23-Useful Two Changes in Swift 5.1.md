@@ -105,6 +105,6 @@ let company = Company(name: "Apple") // 디폴트 값이 있는 프로퍼티는 
 
 관련내용을 더 자세히 보고 싶으신 분은 다음 Swift Evolution 제안 링크를 참조하세요.
 
-[^1]: [Implicit returns from single-expression functions](https://github.com/apple/swift-evolution/blob/master/proposals/0255-omit-return.md){target="_blank"}
+[^1]: [Implicit returns from single-expression functions](https://github.com/apple/swift-evolution/blob/master/proposals/0255-omit-return.md){:target="_blank"}
 
-[^2]: [SE-0242 Synthesize default values for the memberwise initializer](https://github.com/apple/swift-evolution/blob/master/proposals/0242-default-values-memberwise.md){target="_blank"}
+[^2]: [SE-0242 Synthesize default values for the memberwise initializer](https://github.com/apple/swift-evolution/blob/master/proposals/0242-default-values-memberwise.md){:target="_blank"}

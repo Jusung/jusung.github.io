@@ -2,6 +2,8 @@
 layout: post
 title: "[Codility] Lesson3 (Time Complexity) - PermMissingElem"
 category: 
+  - Algorithm
+tag:
   - Codility
 comments: true
 published: true

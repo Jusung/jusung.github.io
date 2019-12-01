@@ -1,7 +1,9 @@
 ---
 layout: post
 title: "[Codility] Lesson4 (Counting Elements) - FrogRiverOne"
-tags: 
+category: 
+  - Algorithm
+tag:
   - Codility
 comments: true
 published: true

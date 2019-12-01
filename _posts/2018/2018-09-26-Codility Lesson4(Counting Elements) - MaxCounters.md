@@ -2,6 +2,8 @@
 layout: post
 title: "[Codility] Lesson4 (Counting Elements) - MaxCounters"
 category: 
+  - Algorithm
+tag:
   - Codility
 comments: true
 published: true

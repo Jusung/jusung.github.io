@@ -33,13 +33,8 @@ ABI가 안정화 됐다는 말은 앞으로 ABI가 변하지 않을 것이라는
 
 Swift 5.0 미만의 Swift는 ABI stable 하지 않습니다. 그래서 각 바이너리 번들에는 고유의 Swift 동적 라이브러리(.dylib 파일)를 갖고 있고 이 라이브러리는 바이너리간 상호 작용을 위해 사용합니다.
 
-![]({{ site.baseurl }}/images/2018/abi stability2.png){: .width="505px" height="162px" .center-image}
-*OS-App-Library간 상호작용*
-{: style="text-align: center;"}
-
-
 ![]({{ site.baseurl }}/images/2018/abi stability2.png)
-{: .width="326px" height="643px" .center-image}
+{: .width="548px" height="383px" .center-image}
 *ipa파일 내부의 동적 라이브러리 파일*
 {: style="text-align: center;"}
 

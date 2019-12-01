@@ -15,15 +15,15 @@ Swift 4.2에서 `Bool`값을 반전시키는 `toggle()`이라는 함수가 `Bool
 ## toggle()
 코딩을 하다보면 `Bool`값을 반전시켜야 하는 경우가 있습니다. 보통은 다음과 같이 구현합니다.
 
-`
+```swift
 myVar.property1.property2.enabled = !myVar.property1.property2.enabled
-`
+```
 
 특히, `Bool`까지의 경로가 긴 경우 위와 같이 같은 경로를 반복해서 적어줘야 하는 불편함이 있었습니다. 이런 상황에서 편리하게 사용할 수 있도록 `toggle()`이라는 함수가 `Bool`에 추가 됐습니다. 그래서 이제 같은 기능을 아래 코드로 구현할 수 있습니다.
 
-`
+```swift
 myVar.property1.property2.enabled.toggle()
-`
+```
 
 실제 코드를 작성해 실행해 보겠습니다.
 

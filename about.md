@@ -7,15 +7,14 @@ permalink: /about/
 ## About Me
 
 ![]({{ site.baseurl }}/images/Profile Face.jpg)
-{: .width="240px" height="240px" .center-image}
 
 저는 소프트웨어 개발 장인(Master)이 되고자 수련 중인 견습생(Apprentice)입니다.<br/>
 2010년 부터 현재까지 iOS/macOS 앱을 개발하고 있습니다.<br/>
 글을 읽는 것과 쓰는 것을 좋아합니다.<br/>
 
-출판 : 창업이야기 : [http://kyejusung.com/mybook/](http://kyejusung.com/mybook/)
+출판 : [창업이야기](http://kyejusung.com/mybook/)
 
-유튜브 : https://www.youtube.com/channel/UCbxHx9ZcngAr0Sy0Ms6Jz0A
+YouTube : [토미스토리](https://www.youtube.com/channel/UCbxHx9ZcngAr0Sy0Ms6Jz0A) 
 
 문의가 있으신 분은 아래 연락처로 연락주세요.
 

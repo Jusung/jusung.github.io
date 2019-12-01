@@ -39,7 +39,7 @@ func genericComputeArray<U>(xs: [Int], f: (Int) -> U) -> [U] {
 
 이렇게 작성된 주석은 View -> Standard Editor -> Show Document Items 메뉴에서 트리 형태로 확인할 수 있었습니다. 그래서 어떤 부분에 추가적인 작업이 필요한지 파악할 수 있는 것이죠. 
 
-![](https://farm2.staticflickr.com/1860/30928990868_e0e9e25249_b.jpg){: .center-image}
+![]({{ site.baseurl }}/images/2015/Swift-Opensource.png)
 
 그런데 이 방법에는 큰 단점이 있습니다. 그것은 바로 이렇게 표시를 해 놓아도 빌드에는 아무런 영향을 끼치지 않는다는 것입니다. 다시 말하면 어딘가 코드를 수정해야한다고 표시는 해 두었지만, 주의를 기울여서 수정하지 않는다면 무엇인가 문제가 있는 코드가 그대로 배포될 수 있다는 것입니다. 
 

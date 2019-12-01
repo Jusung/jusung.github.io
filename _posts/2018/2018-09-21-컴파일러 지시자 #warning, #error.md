@@ -1,8 +1,10 @@
 ---
 layout: post
 title: "컴파일러 지시자 #warning, #error"
-category:
-  - Swift 4.2
+category: 
+  - Swift
+tag:
+  - 4.2
 comments: true
 published: true
 ---
@@ -53,7 +55,7 @@ Swift 4.2에서는 `#warning`, `#error` 라는 컴파일러 지시자가 추가 
 
 이 지시어를 코드에 적으면 빌드시 Xcode혹은 CLI 빌드시 다음과 같은 경고 혹은 에러를 발생시킬 수 있습니다.
 
-![](https://farm2.staticflickr.com/1848/30928990848_f294cea650_b.jpg){: .center-image}
+![]({{ site.baseurl }}/images/2018/compiler drective.jpg)
 
 이를 살짝 응용해 `#warning`, `#error`를 다음과 같이 라이브러리의 최소 버전 확인이나 API Key 정보 누락 등도 표시할 수 있습니다.
 

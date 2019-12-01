@@ -39,7 +39,7 @@ func genericComputeArray<U>(xs: [Int], f: (Int) -> U) -> [U] {
 
 이렇게 작성된 주석은 View -> Standard Editor -> Show Document Items 메뉴에서 트리 형태로 확인할 수 있었습니다. 그래서 어떤 부분에 추가적인 작업이 필요한지 파악할 수 있는 것이죠. 
 
-![]({{ site.baseurl }}/images/2015/Swift-Opensource.png)
+![]({{ site.baseurl }}/images/2018/compiler drective.jpg)
 
 그런데 이 방법에는 큰 단점이 있습니다. 그것은 바로 이렇게 표시를 해 놓아도 빌드에는 아무런 영향을 끼치지 않는다는 것입니다. 다시 말하면 어딘가 코드를 수정해야한다고 표시는 해 두었지만, 주의를 기울여서 수정하지 않는다면 무엇인가 문제가 있는 코드가 그대로 배포될 수 있다는 것입니다. 
 
@@ -54,8 +54,6 @@ Swift 4.2에서는 `#warning`, `#error` 라는 컴파일러 지시자가 추가 
 ```
 
 이 지시어를 코드에 적으면 빌드시 Xcode혹은 CLI 빌드시 다음과 같은 경고 혹은 에러를 발생시킬 수 있습니다.
-
-![]({{ site.baseurl }}/images/2018/compiler drective.jpg)
 
 이를 살짝 응용해 `#warning`, `#error`를 다음과 같이 라이브러리의 최소 버전 확인이나 API Key 정보 누락 등도 표시할 수 있습니다.
 

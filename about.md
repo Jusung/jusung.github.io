@@ -7,7 +7,6 @@ permalink: /about/
 ## About Me
 
 ![]({{ site.baseurl }}/images/Profile Face.jpg)
-{: .width="266px" height="295px" .center-image}
 
 저는 소프트웨어 개발 장인(Master)이 되고자 수련 중인 견습생(Apprentice)입니다.<br/>
 2010년 부터 현재까지 iOS/macOS 앱을 개발하고 있습니다.<br/>

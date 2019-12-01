@@ -2,7 +2,9 @@
 layout: post
 title: "ABI stability란?"
 category:
-  - Swift 5.0
+  - Swift
+tag:
+  - 5.0
 comments: true
 published: true
 ---
@@ -19,7 +21,7 @@ ABI라고 하면 뭔가 떠오르는게 있지 않으시나요? 그건 바로 �
 
 런타임에 Swift 프로그램 바이너리는 다른 라이브러리와 ABI를 통해 상호작용합니다. 운영체제와 앱, 앱과 라이브러리간 상호작용을 위해 ABI를 사용하게 됩니다.
 
-![](https://lh3.googleusercontent.com/ds6nDyjygC-1IodGRreC6WHUDfPIY5yI_95Vis1w9ZWjZjRhpPmGRlq6uC1Nnog8TZ-iGNg5AWfLbrW2mf4=w1000-no-tmp.jpg){: .width="505px" height="162px" .center-image}
+![]({{ site.baseurl }}/images/2018/abi stability1.png){: .width="505px" height="162px" .center-image}
 *OS-App-Library간 상호작용*
 {: style="text-align: center;"}
 
@@ -31,13 +33,13 @@ ABI가 안정화 됐다는 말은 앞으로 ABI가 변하지 않을 것이라는
 
 Swift 5.0 미만의 Swift는 ABI stable 하지 않습니다. 그래서 각 바이너리 번들에는 고유의 Swift 동적 라이브러리(.dylib 파일)를 갖고 있고 이 라이브러리는 바이너리간 상호 작용을 위해 사용합니다.
 
-![](https://lh3.googleusercontent.com/Dxy8Z21iHAxb1fw8mmEV9M_eLSmMDkNM5x5hFgQ7LhTSkSrQiqHxIkgIc7nHhMWP-eeTWnfVhzUV4EXivCI=w1000-no-tmp.jpg){: .width="326px" height="643px" .center-image}
+![]({{ site.baseurl }}/images/2018/abi stability2.png){: .width="326px" height="643px" .center-image}
 *ipa파일 내부의 동적 라이브러리 파일*
 {: style="text-align: center;"}
 
 Swift 5.0부터 ABI가 안정화 됐고 이후 Swift 표준라이브러리를 iOS, 즉 운영체제단에 심으면 ABI는 Swift 5.0 이후 모든 버전에서 호환돼 돌아갈 것 입니다.
 
-![](https://lh3.googleusercontent.com/hK3PcOKcM_dUQQ3m9V1cdPj3TZIlbMNyH2BPHxMxK-gPWrNAp0_ENmYllHLNByuA1CUElqCjL8FkXRDkWRM=w1000-no-tmp.jpg){: .width="274px" height="191px" .center-image}
+![]({{ site.baseurl }}/images/2018/abi stability3.png){: .width="274px" height="191px" .center-image}
 *ABI 안정로 인한 호환성 보장*
 {: style="text-align: center;"}
 

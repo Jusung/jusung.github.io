@@ -2,6 +2,8 @@
 layout: post
 title: "Swift가 오픈소스로 공개되었습니다."
 category:
+  - Swift
+tag:
   - News
 comments: true
 published: true

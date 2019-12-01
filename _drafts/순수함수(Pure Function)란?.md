@@ -4,12 +4,12 @@ title: "순수함수(Pure Function)란?"
 category:
   - Swift
 tag:
-  - managing state & object
+  - Term
 comments: true
 published: true
 ---
 
-## 참고
+[참고]
 이 포스트는 외부 포스트를 요약한 것입니다. 더 자세한 내용을 확인하고 싶으신 분은 원문을 참조하세요.
 
 **원문** : [Pure functions in Swift - by John Sundell](https://www.swiftbysundell.com/posts/pure-functions-in-swift)

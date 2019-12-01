@@ -17,16 +17,21 @@ Xcode9 부터 맥과 기기(iPhone, iPad 등)를 케이블로 연결하지 않�
 2. 아이폰과 맥을 USB 케이블로 연결합니다. (무선 빌드 설정을 위해 유선 연결이 한번 필요합니다. 😄)
 
 3. Xcode의 Window -\> Devices and Simulators 메뉴를 선택합니다.
-![image1](https://lh3.googleusercontent.com/gI3iTndgpTIY7UHaNwWpCtnpsxubh6nOfXlpDIj2HT7FWzc1RagBohh9e7YqQKVU2Q2gnm8HZ031-R6F7M9dMKMxeqHhjRIi0JRn5QRIE_VNdIDilA4ylY1LiEXvpJiKAh9OtWMD_M0ma6XFwWuZM_nvj_yQM9lhq3Yf7J85S4H67poIN2AHuM-_Mhzz453DsEPQael7RDx0oKRKb09DLxIBFP0K9lgvaGHzNjnaEJK2n9-BAtoraQoCe-Q8v1Bfjh4g406-hI_QVzIrn-ohwbzGHjxd80ZtjwBLyioBvwmnxI37iw4KBquSi2IY5TAbB6ZsHmgzxia9w2a5FmV5Xxj1EUrIJyAhfE74eFD5yMgoF8dM7H3bNDcvhykW7nAiEw-zzd-DWJegql8_pibtEedOh-9MoFRzHRgBxJcAGmjzpkPH4f0twd2OWSaAW0k1j6rUhG-ws5F4rCZq-dLlEDv3xGGnCAqLE2JoiydPDt3PmVRcSL7HSzaq_3OSwNP6t2Uij_edJ4J62lCx9pTnnC8d838cCoam24tGjTv1T7KFg6uv1k8oB2WO4qqx7Wthk0_kNc_o4tQZxwahAALWl9N8H9DxyxwHJSHW9eSd=w1031-h393-no)
+
+![]({{ site.baseurl }}/images/2018/wireless_build1.png)
+
 4. 왼쪽 창에서 USB 케이블로 연결 된 아이폰을 선택하면 오른쪽에 현재 아이폰 정보가 보이면서 **Connect via network** 체크박스 항목이 선택되지 않은 상태인 것을 확인할 수 있습니다. 이 체크박스를 선택해 줍니다.
-![image2](https://lh3.googleusercontent.com/Fenti9SdQ98oX-qZjNvVrF3YrHHZ2tBwr-9Wn1W1vqxZLsFdiIUALMfrD_eB3mXDfKipf9UIjWjqvsidR6oHNvsJs6TyjCt5fdQgAqaP_Xu_rmY83-aMv2C3pNBlGthg4MqDbG4gu2yY93Cbvn9DQS3eMic-S4U3ccclYluX5elYdWSdkS5W_p7mGYPP6QpITrMJOv274ajbCRQ4KMKhXABRoxFtXs8_J5DuVPnJX4k-8GJzXRShZRjZnNowX8CSikQpnsNH_pOQKTnitxdEpUBxQQR5ZfsMDXJ_eiKvJhCU39qLva-lIXknETBrUv9PbTUO94-yxxvOw94emBcDQJ8E05y5kpiKHmDNnBi_QKxChiu2NC_9rVSS1_ORIZXu3GlL_BhuR5LSmZBS5JeRkBuZS2o_WrB7ODIiR0-RuXEsificU_o7ZhzYwyeJ1E-kwwrTXK-ooBDny1U9LK5XMs2xBpbkHOGmnOOmvBXnhkONd4mtw9icsDjXVcUGZJ_sIlNR9MW6FQCc8JLRNPI-aJ_ys7dfDhHoeOPFIo-s97XHwhMeZcKdVN09dlutHoFGgN1Dfd3Fr1L97NNmlak5gBQDf6eN0TDB9I8gKSnU=w1079-h288-no)
+
+![]({{ site.baseurl }}/images/2018/wireless_build2.png)
 
 5. Xcode에서 설정이 완료되면 왼쪽 창 연결된 아이폰 항목의 오른쪽에 지구본 모양의 아이콘을 확인할 수 있습니다.
-![image3](https://lh3.googleusercontent.com/uaHK_Kp-GbHeIH_c8wuwJvCpRP9IOF46p7iApXM8wAe4-VWu1t1R0-nUHbBWMs_9FIgOcqsB67K9ZSBPp_nPwxqwZrhD0uQf_uQ6Xz3X5Gjz9gjcwcNPPx5QFaSm_lVjMdeLXmoR70lHU_7P_HOVfK-6FPinKqZ0nJQ9vp4vEUF3FfF4CO6U12QYhPZY_0v_mjtN62sVmFbwc4RPNgRqZOpCYwZAVXzVkhHoX0OQs4mXGLiu3t_njTmyhCZTSJmK8FJCDjXExndCMEZKu9O8oN28Gj54LHL5VPt-4Bybo78M_7__U2y7Fm4y2OuIpgYOSHValPGBIZaWMt6dwmNPpQkVdU_MxTIsARcr5qD_Akq9tKZblT_V7mVicXtq9MTXg_v75RRMAY2Y52dLJvI7lmRW3Zh2ZHK9UfTLpPUuG33FfzV2zXdx9fuUBcb7Z1LsdGmWcBEBPxqQS3Xld0kUVeAIjEQnJonn9DlKTO9j_FDfwfPi-goFCpc88_BhfIfgsqjEqQrRHQbiFTvrkxdqCG7gwbcwxqnISP-4tqsbMi4VJSGnM0SmPUxQBP6nJ540ZlhNjmVJY-SBE2ZqQsC2CmWvt2Xdo0TQa-aMxm4Q=w1079-h239-no)
+
+![]({{ site.baseurl }}/images/2018/wireless_build3.png)
 
 6. 설정이 완료 됐으니 맥과 아이폰간 USB 연결을 해지 합니다.
 
 7. Xcode로 돌아가 Run 버튼을 클릭 합니다.
-![image4](https://lh3.googleusercontent.com/ia9yavyeU1bZ7gtMwbAPDI2JRNki74ds5hrZuZtGJJnnIkvKhCK7pzMWMK-5X-3FDu254P-mviopxOakGBoeWwdTnh_dCMvgTZ8aGcxAJ4gWSE3oem-LkGhsX-J_sMAS8aPdNPsHs8xLIopBix28eGAXct69Myjud5lk9pQ2pZtO4MKjElrCiTLfEszsSlfpI7OfFiS89Ced2jNQ-5KLe_tycXOpBFcv05uFL9-bq_RUezQ83VBxG6ccH3W_7Ef2JF2O-wY59KidrNfZx7FQhUYCUiv0PVVul2q7bqmasTjM_1xB38iIE7O-siRfZqUa_xt80xrUJNS-k7ib6lKYHaLOkNeaWq6y-LPMnXOskZwxyr__YUKyzjL164ymVBEHQCPjQFVSyfGLvXgRxfhq6ToPSgpEGAtI8zEAgCUAc5aNmQG4ztix2blAsaX61_QjoB_uWZpkHEsD6kl3YCNwI7UkOaKlzKkiTj-0exFnakZkxRqrSJ4JlFdQJ0z8c05t6VMltJo8BwXO5GVONGQagKey7KFJtBvcffHtPhk4_QjeJCAIysxPcAb-ClWE9iwMCf2TmWALHaNLVfDAdXiQ25gJ6jAguON-byPhTDNE=w1079-h44-no)
+
+![]({{ site.baseurl }}/images/2018/wireless_build4.png)
 
 👏 이제 무선으로 빌드를 더 편하게 할 수 있습니다. 😎

@@ -1,8 +1,10 @@
 ---
 layout: post
 title: "Swift 5.1의 유용한 변화 2가지"
-category:
-  - Swift 5.1
+category: 
+  - Swift
+tag:
+  - 5.1
 comments: true
 published: true
 ---

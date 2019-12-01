@@ -1,7 +1,9 @@
 ---
 layout: post
 title: "String 관련 용어 정리"
-category:
+category: 
+  - Swift
+tag:
   - Basic
 comments: true
 published: true

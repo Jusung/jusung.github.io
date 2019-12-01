@@ -1,7 +1,9 @@
 ---
 layout: post
-title: "[Xcode] 무선(Wireless) 빌드 사용하기"
+title: "Xcode에서 무선(Wireless) 빌드 사용하기"
 category:
+  - iOS
+tag:
   - Xcode
 comments: true
 published: true

@@ -35,7 +35,7 @@ Swift 5.0 미만의 Swift는 ABI stable 하지 않습니다. 그래서 각 바�
 
 ![]({{ site.baseurl }}/images/2018/abi stability2.png)
 *ipa파일 내부의 동적 라이브러리 파일*
-{: style="text-align: center;"}
+{: .width="326px" height="643px" style="text-align: center;"}
 
 Swift 5.0부터 ABI가 안정화 됐고 이후 Swift 표준라이브러리를 iOS, 즉 운영체제단에 심으면 ABI는 Swift 5.0 이후 모든 버전에서 호환돼 돌아갈 것 입니다.
 

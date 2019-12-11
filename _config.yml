@@ -115,3 +115,5 @@ exclude:
 theme: jekyll-theme-cayman
 
 future: false
+
+timezone: Asia/Seoul

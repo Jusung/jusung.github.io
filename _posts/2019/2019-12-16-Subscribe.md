@@ -66,7 +66,7 @@ Wha~~t???
 
 다른 하나는 `Subscribe`가 `Operator`였다는 사실입니다. 😮 헐… 
 
-`Observable`을  합치거나 발행된 아이템을 변형시키거나 걸러내는 행위를 하는 것만 `Operator`인줄 알았는데 `Subscribe`도 연산자였던 것입니다. 하는 일은 정의과 같이 `Observable`에 `Observer`를 붙여주는 일이죠.
+`Observable`을  합치거나 발행된 아이템을 변형시키거나 걸러내는 행위를 하는 것만 `Operator`인줄 알았는데 `Subscribe`도 연산자였던 것입니다. 하는 일은 정의와 같이 `Observable`에 `Observer`를 붙여주는 일이죠.
 
 오호! 지식이 늘었네요! 😙 (지식이 +1 늘었다.)
 

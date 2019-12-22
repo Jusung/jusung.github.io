@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "컴파일러 지시자 #warning, #error"
+title: "[Swift] 컴파일러 지시자 #warning, #error"
 category: 
   - Swift
 tag:
-  - 4.2
+  - Swift 4.2
 comments: true
 published: true
 ---

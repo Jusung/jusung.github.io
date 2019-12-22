@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[RxSwift] ABI stability란?"
+title: "[Swift] ABI stability란?"
 category:
   - Swift
 tag:

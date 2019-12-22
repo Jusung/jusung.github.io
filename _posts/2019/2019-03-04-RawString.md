@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[RxSwift] Raw String"
+title: "[Swift] Raw String"
 category:
   - Swift
 tag:

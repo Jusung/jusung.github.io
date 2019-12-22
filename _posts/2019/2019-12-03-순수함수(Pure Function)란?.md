@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "순수함수(Pure Function)란?"
+title: "[Swift] 순수함수(Pure Function)란?"
 category:
   - Swift
 tag:

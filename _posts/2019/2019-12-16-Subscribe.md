@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Subscribe의 동작 파헤치기"
+title: "[RxSwift] Subscribe의 동작 파헤치기"
 category: 
   - RxSwift
 tag:

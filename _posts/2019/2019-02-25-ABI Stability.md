@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "ABI stability란?"
+title: "[RxSwift] ABI stability란?"
 category:
   - Swift
 tag:
-  - 5.0
+  - Swift 5.0
 comments: true
 published: true
 ---

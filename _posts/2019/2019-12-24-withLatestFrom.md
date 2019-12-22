@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "withLatestFrom"
+title: "[RxSwift] withLatestFrom"
 category: 
   - RxSwift
 tags: 
-  - RxSwift Combination Operators
+  - Combination Operators
 comments: true
 published: true
 ---

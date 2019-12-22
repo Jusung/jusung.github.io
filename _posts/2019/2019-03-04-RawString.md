@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Raw String"
+title: "[RxSwift] Raw String"
 category:
   - Swift
 tag:
-  - 5.0
+  - Swift 5.0
 comments: true
 published: true
 ---

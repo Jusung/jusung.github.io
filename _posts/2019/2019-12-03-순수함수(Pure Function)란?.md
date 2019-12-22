@@ -120,7 +120,7 @@ class LoginControllerTests: XCTestCase {
         }
         
         XCTAssertEqual {
-            controller.makeFailureHelpText(numberOfAttemps: 0), 
+            controller.makeFailureHelpText(numberOfAttemps: 3), 
             "Still can't log you in. Forgot your password?"
         }
     }

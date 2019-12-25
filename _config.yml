@@ -11,6 +11,7 @@ description: iOS 개발관련 지식을 공유합니다.
 #
 # Flags below are optional
 #
+timezone: Asia/Seoul
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://jusung.github.io/images/profile.png
@@ -115,5 +116,3 @@ exclude:
 theme: jekyll-theme-cayman
 
 future: false
-
-timezone: Asia/Seoul

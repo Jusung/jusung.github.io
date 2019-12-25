@@ -10,7 +10,7 @@ published: true
 ---
 
 ## 역할
-두 `Observable`중 첫번째 `Observable`에서 이벤트가 발생할때마다 그 이벤트를 두번째 `Observable`의 **가장 최근 이벤트와 결합**해 전달합니다.
+두 `Observable`중 첫번째 `Observable`에서 아이템이 방출될 때마다 그 아이템을 두번째 `Observable`의 **가장 최근 아이템과 결합**해 방출합니다.
 
 ![withLatestFrom]({{ site.baseurl }}/images/2019/RxSwift - withLatestFrom.png)
 
@@ -54,7 +54,7 @@ numSubject.onNext(5)     // 5D
 5D
 ```
 
-이벤트는 `numSubject`에서 이벤트가 발생할 때만 `withLatestFrom` 연산이 수행됩니다. 첫번째 `Observable`에서 첫 아이템(A)이 발생한 시점에 두번째 `Observable`의 아이템이 없으므로, 아무런 아이템이 발생되지 않고 그 이후 부터 아이템이 발생되는 것을 확인할 수 있습니다.
+`numSubject`에서 아이템이 방출될때만 `withLatestFrom` 연산이 수행됩니다. 첫번째 `Observable`에서 첫 아이템(A)이 발출된 시점에 두번째 `Observable`에서 방출된 아이템이 없으므로, 아무런 아이템이 방출되지 않고 그 이후 부터 아이템이 방출되는 것을 확인할 수 있습니다.
 
 ## 활용
 

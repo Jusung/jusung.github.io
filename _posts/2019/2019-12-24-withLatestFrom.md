@@ -29,7 +29,7 @@ numSubject
     .subscribe(onNext: { print($0) })
     .disposed(by:disposeBag)
     
-numSubject.onNext(1)     // 이벤트 발생하지 않음 : charSubject에서 발생한 이벤트가 아직 1개도 없으므로
+numSubject.onNext(1)     // 아이템 방출되지 않음 : charSubject에서 발출된 아이템이 아직 1개도 없으므로
     
 charSubject.onNext("A")
     

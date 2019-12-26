@@ -111,7 +111,7 @@ loginButton
 ```swift
 loginButton
     .withLatestFrom(usernameTextField)
-    .flatMap { username in -> Observable(UserDataModel)
+    .flatMap { username -> Observable(UserDataModel) in
     		return API.Request(username: username)
     }
 ```

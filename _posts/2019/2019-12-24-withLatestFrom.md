@@ -29,7 +29,7 @@ numSubject
     .subscribe(onNext: { print($0) })
     .disposed(by:disposeBag)
     
-numSubject.onNext(1)     // 아이템 방출되지 않음 : charSubject에서 발출된 아이템이 아직 1개도 없으므로
+numSubject.onNext(1)     // 아이템 방출되지 않음 : charSubject에서 방출된 아이템이 아직 1개도 없으므로
     
 charSubject.onNext("A")
     
@@ -54,7 +54,7 @@ numSubject.onNext(5)     // 5D
 5D
 ```
 
-`numSubject`에서 아이템이 방출될때만 `withLatestFrom` 연산이 수행됩니다. 첫번째 `Observable`에서 첫 아이템(A)이 발출된 시점에 두번째 `Observable`에서 방출된 아이템이 없으므로, 아무런 아이템이 방출되지 않고 그 이후 부터 아이템이 방출되는 것을 확인할 수 있습니다.
+`numSubject`에서 아이템이 방출될때만 `withLatestFrom` 연산이 수행됩니다. 첫번째 `Observable`에서 첫 아이템(A)이 방출된 시점에 두번째 `Observable`에서 방출된 아이템이 없으므로, 아무런 아이템이 방출되지 않고 그 이후 부터 아이템이 방출되는 것을 확인할 수 있습니다.
 
 ## 활용
 
@@ -81,11 +81,11 @@ loginButton
     
 usernameTextField.onNext("tome.kye")
     
-loginButton.onNext(())      // "tome.kye" 아이템 발생
+loginButton.onNext(())      // "tome.kye" 아이템 방출
     
 usernameTextField.onNext("tommy.kye")
     
-loginButton.onNext(())      // "tomme.kye" 아이템 발생
+loginButton.onNext(())      // "tomme.kye" 아이템 방출
 ```
 
 **[실행 결과]**

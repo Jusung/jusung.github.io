@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[RxSwift] withLatestFrom"
+title: "[RxSwift] Zip"
 category: 
   - RxSwift
 tags: 

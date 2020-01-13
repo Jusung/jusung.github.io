@@ -12,7 +12,7 @@ published: true
 ## 역할
 두 개 이상의 `Observable`에서 **방출된 순서가 같은 아이템을 묶어서 하나의 아이템으로 방출**합니다.
 
-![zip]({{ site.baseurl }}/images/2019/RxSwift - zip)
+![zip]({{ site.baseurl }}/images/2019/RxSwift - zip.png)
 
 ## 예제
 
@@ -55,11 +55,11 @@ numSubject.onNext(5)
 ## 활용
 같은 순서쌍으로 처리해야하는 작업에 사용 가능 합니다.
 
-예를들면, `UITableView`에서 선택한 Cell의 indexPath와 model에 대한 처리를 각각하고 싶을때 `zip`을 사용하면 편리합니다.
+예를들면, `UITableView`에서 선택한 Cell의 `indexPath`와 `model`에 대한 처리를 각각하고 싶을때 `zip`을 사용하면 편리합니다.
 
-첫번째 `Observable`: UITableView에서 선택된 아이템 indexPath
+첫번째 `Observable`: UITableView에서 선택된 아이템 `indexPath`
 
-두번째 `Observable`: UITableView에서 선택된 아이템 모델
+두번째 `Observable`: UITableView에서 선택된 아이템 `model`
 
 
 **[코드]**
@@ -73,7 +73,7 @@ Observable.zip(tableView.rx.itemSelected, tableView.rx.modelSelected(ServiceType
 .disposed(by: disposeBag)
 ```
 
-indexPath는 선택된 Cell을 deselect하기 위해 사용하고, model은 현재 선택된 데이터를 관리하기 위해 사용할 수 있습니다.
+`indexPath`는 선택된 Cell을 deselect하기 위해 사용하고, `model`은 현재 선택된 데이터를 관리하기 위해 사용할 수 있습니다.
 
 **[참 고]**
 

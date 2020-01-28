@@ -92,7 +92,7 @@ Trait이란? UI 작업시 코드를 쉽고 직관적으로 작성해 사용할 �
 * `error`를 방출하지 않음
 * 메인스케쥴러에서 `observe` 됨
 * 메인스케쥴러에서 `subscribe`됨
-* `Signal`을 제외하고 자원을 공유함(e.g share(replay:1))
+* `Signal`을 제외한 나머지 Trait은 자원을 공유함(e.g share(replay:1))
 
 ### RxCocoa의 Traits
 * `ControlProperty` : 컨트롤에 data를 binding 하기 위해 사용 (rx namespace 사용)

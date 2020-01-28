@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[RxSwift] Chapter 12: Beginning RxCocoa"
+title: "[RxSwift Book] Chapter 12: Beginning RxCocoa"
 category: 
   - RxSwift
 tags: 
@@ -21,7 +21,7 @@ published: true
 
 	
 ### ControlProperty
-Subject와 같이 프로퍼티에 새 값을 주입시킬 수 있고(`ObserverType`) 값의 변화도 관찰할 수 있는 타입(`ObservableType`). 
+`Subject` 같이 프로퍼티에 새 값을 주입시킬 수 있고(`ObserverType`) 값의 변화도 관찰할 수 있는 타입(`ObservableType`). 
 
 - 예) UITextField+Rx.Swift의 text 프로퍼티는  `ControlProperty`
 

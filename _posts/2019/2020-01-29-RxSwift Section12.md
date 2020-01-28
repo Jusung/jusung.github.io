@@ -60,7 +60,6 @@ public protocol ControlPropertyType : ObservableType, ObserverType {
 
 ```swift
 extension Reactive where Base: UILabel {
-   
     /// Bindable sink for `text` property.
     public var text: Binder<String?> {
         return Binder(self.base) { label, text in

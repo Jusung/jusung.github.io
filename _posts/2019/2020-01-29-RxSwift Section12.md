@@ -9,7 +9,7 @@ comments: true
 published: true
 ---
 
-이 포스트는 [RxSwift - Reactive Programming with Swift](https://store.raywenderlich.com/products/rxswift) 책의 챕터 12에서 눈에띄는 내용들만 요약해 둔 것입니다. 참고 바랍니다.
+이 포스트는 [RxSwift - Reactive Programming with Swift](https://store.raywenderlich.com/products/rxswift) 책의 챕터 12에서 눈에 띄는 내용들만 요약해 둔 것입니다. 참고 바랍니다.
 
 ## 1. RxCocoa
 -  UI Control과 다른 SDK 클래스를 wrapping한 커스텀 extension set
@@ -82,7 +82,7 @@ RxCocoa에서 binding은 단방향 binding
 ![unidirectional]({{ site.baseurl }}/images/2019/RxSwift - unidirectional.png)
 
 ### Bind(to:)
-- `bind(to:)`은  `subscribe()`의 별칭(alias or syntatic sugar)
+- `bind(to:)`는 `subscribe()`의 별칭(alias or syntatic sugar)
 - `bind(to: observer)`를 호출하면 실제로는 `subscribe(observer)`가 실행됨
 
 ## 4. Trait

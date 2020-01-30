@@ -15,7 +15,7 @@ published: true
 -  UI Control과 다른 SDK 클래스를 wrapping한 커스텀 extension set
 -  iOS, tvOS, macOS의 모든 플랫폼에서 동작
 
-## 2. ObserverTyp과 ObservableType
+## 2. ObserverType과 ObservableType
 - `ObserverType` : 값을 주입(Inject)시킬 수 있는 타입
 - `ObservableType` : 값을 관찰할 수 있는 타입
 

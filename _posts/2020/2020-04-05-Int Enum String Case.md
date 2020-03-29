@@ -39,7 +39,7 @@ enum Vehicles: Int {
     }
 ```
 
-하지만 이 방법은 좋지 않은 방법입니다. 이유는 case가 변경될때마다 프로퍼티를 변경해줘야 하기 때문입니다.. 보다 간단한 방법은 없을까요? 있습니다. `String(describing: self)`를 사용하는 것입니다.
+하지만 이 방법은 좋지 않은 방법입니다. 이유는 case가 변경될때마다 프로퍼티를 변경해줘야 하기 때문입니다. 보다 간단한 방법은 없을까요? 있습니다. `String(describing: self)`를 사용하는 것입니다.
 
 ```swift
 enum Vehicles: Int {

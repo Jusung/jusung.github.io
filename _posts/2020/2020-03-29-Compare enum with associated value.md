@@ -79,9 +79,9 @@ if stateA == .loading("Loading") {     // ❌ 컴파일 에러 발생!
 
 ```swift
 if case .ready = stateA {
-    print("Loading")     // ✅ Loading이 결과로 출력
+    print("Ready")     // ✅ Ready가 결과로 출력
 } else {
-    print("Not Loading")
+    print("Not Ready")
 }
 
 if case .loading(_) = stateA {

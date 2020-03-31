@@ -67,7 +67,7 @@ numObservable
 
 > `Observable`을 `Subscribe`할때마다 새로운 `Observable`시퀀스가 생성된다.  
 
-자 이제 이 사실을 기억하고  `.share()`연산자를 살펴보겠습니다.
+자 이제 이 사실을 기억하고  `share()`연산자를 살펴보겠습니다.
 
 ## Share()
 
@@ -157,7 +157,7 @@ networkRequestAPI -> isDisposed
 
 `share()`는 `subscribe()`가 처음 호출될 때 (Subscriptoin횟수가 0 -> 1 일때)만 Subscription을 생성하고, 이후 두번째 세번째로 `subscribe()`가 호출되면 새로운 Subscription을 생성하는 것 대신 이미 만들어진 Subscription을 이후 `subscribe()`를 호출한 곳에 공유해 사용합니다. 
 
-만약 `share()`에 `subscribe()`한 Subscription이 모두 `disposed` 되면 `share()`는 공유했던 Subscription을`dispose` 시킵니다.
+만약 `share()`에 `subscribe()`한 Subscription이 모두 `disposed` 되면 `share()`는 공유했던 Subscription을 `dispose` 시킵니다.
 
 이후 다른  `subscribe()`가 호출되면 `share()`는 새로운 Subscription을 생성합니다.
 그렇기 때문에 `share()`는 completed 되지 않는 `Observable`에 사용하는 것이 안전합니다. 혹은 공유하는 시퀀스가 completed 된 후 새로운 `Observable`이 생성되지 않는다고 확신할 때 사용해야합니다.

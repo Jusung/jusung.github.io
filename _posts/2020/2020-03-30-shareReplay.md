@@ -211,7 +211,7 @@ public func share(replay: Int = 0, scope: SubjectLifetimeScope = .whileConnected
 코드를 보면 `share(replay)`를 하면 scope가 `.forever` 이거나 `.whileConnected` 상관없이 모두  `return self.multicast(makeSubject: { ReplaySubject.create(bufferSize: replay) }).refCount()` 를 반환하는 것을 확인할 수 있습니다.
 
 네 그렇습니다.
-사실 `anObservable.share() `는 `anObservable.publish().refCount()`입니다.
+사실 `anObservable.share()`는 `anObservable.publish().refCount()`입니다.
 
 다음 그림과 이후 설명을 보면 앞에 설명한 `share()`의 동작이 좀 더 이해 되실 겁니다. 더 자세한 설명은 생략합니다. 🙂
 

@@ -177,7 +177,7 @@ public func share(replay: Int = 0, scope: SubjectLifetimeScope = .whileConnected
 `replay`외에 `scope`이라는 인자가 있는데 이 값은 버퍼의 생명주기에 관한 것입니다. 입니다.
  `.forever`와 `.whileConnected`를 선택할 수 있고 아무값도 설정하지 않으면 .`whileConnected`를 기본값으로 사용합니다.
 
-- `.forever` : Subscription이 0이 되더라도 버퍼가 유지 됩니다. 그래서 새로운 Subscription은 `Subscribe()` 를 하면 **마지막에 버퍼에 남아있던 replay 개수 만큼의 값을 수신**하게 됩니다.
+- `.forever` : Subscription이 0이 되더라도 버퍼가 유지 됩니다. 그래서 새로운 Subscription은 `Subscribe()` 를 하면 **마지막에 버퍼에 남아있던 replay개수 만큼의 값을 수신**하게 됩니다.
 
 - `.whileConnected` : 1개 이상의 Subscriber가 존재하는 동안만 버퍼가 유지 됩니다. Subscription이 0이 되면 버퍼가 비워지고 새로운 Subscription은 버퍼에 남아 있던 값이 없으므로 `replay`시 **새 값을 요청해 수신**하게 됩니다.
 

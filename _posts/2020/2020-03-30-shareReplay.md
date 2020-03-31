@@ -218,8 +218,8 @@ public func share(replay: Int = 0, scope: SubjectLifetimeScope = .whileConnected
 ![Share]({{ site.baseurl }}/images/2020/Rxswift - Share5.png)
 
 - `publish()`  : 이 연산자는 보통의 `Observable`을 `ConnectableObservable`로 변환해 줍니다.
-- `ConnectableObservable` : `ConnectableObservable` 은 Subscriber가 있어도 `connect()`를 호출하기 전까지는 아이템을 방출하지 않습니다. `connect()`를 호출하고 나서야 아이템을 방출하기 시작합니다.
-- `refcount()`  : `refcount()` 는 `ConnectableObservable`에 Connect와 Disconnect를 자동으로 담당하고, `ConnectableObservable` 를 보통의 `Observable`처럼 사용할 수 있게 해줍니다. 다시말해 Subscription count를 계속 세고 있다가 Subscription의 개수가 0 -> 1 개가 되는 시점에 `connect()`를 수행하고 Subscription이 0이 되면 `disconnect()`를 수행합니다.
+- `ConnectableObservable` : `ConnectableObservable`은 Subscriber가 있어도 `connect()`를 호출하기 전까지는 아이템을 방출하지 않습니다. `connect()`를 호출하고 나서야 아이템을 방출하기 시작합니다.
+- `refcount()`  : `refcount()` 는 `ConnectableObservable`에 Connect와 Disconnect를 자동으로 담당하고, `ConnectableObservable`을 보통의 `Observable`처럼 사용할 수 있게 해줍니다. 다시말해 Subscription count를 계속 세고 있다가 Subscription의 개수가 0 -> 1 개가 되는 시점에 `connect()`를 수행하고 Subscription이 0이 되면 `disconnect()`를 수행합니다.
 
 ## 결론
 

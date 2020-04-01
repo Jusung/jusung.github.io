@@ -162,7 +162,7 @@ networkRequestAPI -> isDisposed
 이후 다른  `subscribe()`가 호출되면 `share()`는 새로운 Subscription을 생성합니다.
 그렇기 때문에 `share()`는 completed 되지 않는 `Observable`에 사용하는 것이 안전합니다. 혹은 공유하는 시퀀스가 completed 된 후 새로운 `Observable`이 생성되지 않는다고 확신할 때 사용해야합니다.
 
-## Reply
+## Replay
 
 `share(replay: 1)`에서 `replay`에 넣는 인자는 버퍼의 크기를 의미합니다.
 

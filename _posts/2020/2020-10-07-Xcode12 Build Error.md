@@ -17,7 +17,7 @@ published: true
 
 Build Setting에
 
-![pic]({{ site.baseurl }}/images/2020/Xcode Build Error0.png)
+![]({{ site.baseurl }}/images/2020/Xcode Build Error0.png)
 
 1. `EXCLUDED_ARCHS`에 arm64를 추가
 2. `VALID_ARCH` 제거
@@ -36,7 +36,7 @@ Build Setting에
 	- arm7 : 아이폰 5, 5C
 	- arm7s : iOS7 지원 옛날 기기
 
-![pic]({{ site.baseurl }}/images/2020/Xcode Build Error1.png)
+![]({{ site.baseurl }}/images/2020/Xcode Build Error1.png)
 *아이폰 기기별 사용 아키텍쳐*
 {: style="text-align: center;"}
 

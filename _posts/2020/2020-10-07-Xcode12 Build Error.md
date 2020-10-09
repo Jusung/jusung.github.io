@@ -70,7 +70,7 @@ Xcode에서 이와 관련해 설정하는 부분은 `Build Setting -> Valid Arch
 
 Xcode에 아이폰11 기기를 연결하고  debug 설정으로 Run을 실행하면 어떤 일이 발생할까요?
 
-![]({{ site.baseurl }}/images/2020/Xcode Build Error4.png)
+![]({{ site.baseurl }}/images/2020/Xcode Build Error4-0.png)
 
 Valid Architecture에 지정한 `arm64`, `arm7`, `arm7s` 용 빌드를 생성해 기기에 심습니다.
 그런데 여기서 질문이 한가지 듭니다.
@@ -83,7 +83,9 @@ Valid Architecture에 지정한 `arm64`, `arm7`, `arm7s` 용 빌드를 생성해
 
 Build Setting의 이 옵션을 활성화 시키면 Xcode가 빌드시 Valid Architectures를 참조하지 않고, **현재 연결된 기기를 감지해 그 기기에 맞는 아키텍쳐용 빌드만 생성**합니다. 다시말해 이 옵션을 활성화하고 아이폰11에 빌드를 하면 `arm64`용 바이너라만 빌드가 되는 것이죠.
 
-시뮬레이터도 마찬가지 입니다. Xcode가 시뮬레이터 아키텍쳐를 감지해 해당하는 아키텍쳐 바이너리를 생성해 심습니다. 이 경우에는 `x86_64` 아키텍쳐 용 바이너리를 만듭니다.
+![]({{ site.baseurl }}/images/2020/Xcode Build Error4.png)
+
+시뮬레이터도 마찬가지 입니다. Run Destination을 시뮬레이션으로 선택해 Run을 수행하면 시뮬레이터 아키텍쳐를 감지해 해당하는 아키텍쳐 바이너리를 생성해 심습니다. 이 경우에는 `x86_64` 아키텍쳐 용 바이너리를 만듭니다.
 
 이 옵션을 왜 debug 설정에서만 true로 설정해 사용하는지는 이제 이해가 되시죠?
 

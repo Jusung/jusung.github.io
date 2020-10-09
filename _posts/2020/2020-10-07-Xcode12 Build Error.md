@@ -29,6 +29,7 @@ Build Setting에
 문제의 원인을 살펴보기전에 우선 Xcode에서 빌드와 관련해 알아야 할 내용이 두가지 있습니다.
 
 첫째, 아이폰은 기종에 따라 각기 다른 아키텍쳐의 CPU를 사용한다.
+
 	- arm64 : 아이폰 5S 및 이후 기종 (6, 6S, SE, 7…)
 	- arm7 : 아이폰 5, 5C
 	- arm7s : iOS7 지원 옛날 기기
@@ -42,7 +43,7 @@ Build Setting에
 이제 본격적으로 설명을 시작하겠습니다.
 
 앱을 하나 만들었는데, 이 앱을 아이폰 5S에서부터 최신기기인 iPhone 11까지 동작하도록 하려면 어떻게 빌드해야 할까요?
-`arm64` 바이너리 생성을 하나만 하는 것이 아니라 `arm64`, `arm7`, `arm7s` 바이너리를 각각 생성해 원하는 모든 기기에서 동작할 수 있도록 해야합니다.
+`arm64` 바이너리 하나만 생성 하는 것이 아니라 `arm64`, `arm7`, `arm7s` 바이너리를 각각 생성해 원하는 모든 기기에서 동작할 수 있도록 해야합니다.
 
 Xcode에서 이와 관련해 설정하는 부분은 `Build Setting -> Valid Architectures` 에 있었습니다.
 
@@ -53,10 +54,11 @@ Xcode에서 이와 관련해 설정하는 부분은 `Build Setting -> Valid Arch
 이 설정으로 빌드를 하면 Valid Architectures로 지정한 모든 아키텍쳐 바이너리를 생성해 해당 아키텍쳐를 사용하는 모든 기기에서 동작할수 있게 합니다.
 
 여기서 질문! ✋
+
 그렇다면 아이폰 시뮬레이터는 어떤 아키텍쳐를 사용할까요?
 아이폰 5 시뮬레이터면 `arm7`을 아이폰 11시뮬레이터면 `arm64`를 사용할까요?
 
-❌아닙니다!
+아닙니다!
 
 아이폰 시뮬레이터는 맥에서 동작합니다. 그래서 아이폰 시뮬레이터는 맥 CPU의 아키텍쳐를 따릅니다. 요즘 맥은 core i5, i7 등의 인텔 CPU를 사용하고 있고, 이 CPU는 `x86_64`라는 아티텍쳐를 사용합니다. 그래서 시뮬레이터는 `x86_64`라는 아키텍쳐를 사용합니다.
 
@@ -79,7 +81,7 @@ Valid Architecture에 지정한 `arm64`, `arm7`, `arm7s` 용 빌드를 생성해
 
 > 아이폰11은 `arm64` 아키텍쳐를 사용하는데, `arm64` 바이너리만 만들면 되지 굳이 `arm7`, `arm7s` 바이너리까지 만들 필요가 있을까?
 
-그렇습니다. 이럴때 사용하기 위한 옵션이 `Build Active Architecture Only`입니다.
+맞습니다. 이럴때 사용하기 위한 옵션이 `Build Active Architecture Only`입니다.
 
 ![]({{ site.baseurl }}/images/2020/Xcode Build Error5.png)
 
@@ -113,11 +115,14 @@ Build Setting의 이 옵션을 활성화 시키면 Xcode가 빌드시 Valid Arch
 *스크린샷을 보시면 `Valid Architectures(VALID_ARCHS)` 설정이 더 이상 `Architectures`섹션에 있지않고 `User-Defined`섹션에 노출된 것을 확인하실 수 있습니다*
 {: style="text-align: center;"}
 
-정리하자면 기존에는 빌드시 **원하는 아키텍쳐를 지정**하는 방식을 사용했는데, Xcode12에서는 반대로 빌드시 **제외시킬 아키텍쳐를 지정**하는 방식을 사용(필수x, 권장하는 부분)하는 쪽으로 바꼈습니다.
+정리하자면 기존에는 빌드시 **원하는 아키텍쳐를 지정**하는 방식을 사용했는데,
+Xcode12에서는 반대로 빌드시 **제외시킬 아키텍쳐를 지정**하는 방식을 사용(필수x, 권장하는 부분)하는 쪽으로 바꼈습니다.
 
 Xcode12에서 왜 이렇게 변경한걸까요?
 
-바로 앞으로 출시될 ARM기반 맥북 때문입니다. 애플에서 머지않아 ARM기반 맥이 출시됩니다. 그동안 맥은 인텔 CPU기반의 맥이었습니다.(더 거슬러 올라가면 PowerPC) 하지만 곧 ARM용 맥도 출시가 되서 앞으로는 인텔 CPU 기반 맥과, ARM용 맥이 공존하는 상황이 된 것입니다.
+그것은 바로 앞으로 출시될 ARM기반 맥북 때문입니다.
+
+애플에서 머지않아 ARM기반 맥이 출시됩니다. 그동안 맥은 인텔 CPU기반이었습니다.(더 거슬러 올라가면 PowerPC) 하지만 곧 ARM용 맥도 출시가 되서 앞으로는 인텔 CPU 기반 맥과, ARM용 맥이 공존하는 상황이 됐습니다.
 
 앞서 언급드린것처럼 아이폰 시뮬레이터는 맥의 아키텍쳐를 따릅니다. 현재 아이폰 시뮬레이터의 아키텍쳐는 `x86_64`입니다. ARM기반 맥은 `arm64`구조를 사용합니다.
 
@@ -154,39 +159,66 @@ Build Setting에 `EXCLUDED_ARCHS` 항목에
 
 ## 해결하지 못한 내용
 
-참고로 Xcode12 에서 시뮬레이터 빌드 오류를 수정하려면 기존에 `VALID_ARCH` 설정도 함께 지워야하는데, 이 부분은 애플에서 사용하지 않는 것이 좋다라고 언급한 내용 정도만 확인하고 정확히 빌드오류 해결과 어떤 연관이 있는지는 확인하지 못하였습니다.
+참고로 Xcode12 에서 시뮬레이터 빌드 오류를 수정하려면 기존에 `VALID_ARCH` 설정도 함께 지워야하는데, 이 부분은 애플에서 사용하지 않는 것이 좋다라고 언급한 내용 정도만 확인하고, 정확히 빌드오류 해결과 어떤 연관이 있는지는 확인하지 못하였습니다.
 
 기존의 방식에 따르면 `BUILD ACTIVE ARCHITECTURE ONLY`를 세팅하면 위 설정은 참고하지 않는데… 왜 설정이 있다고 오류가 나는지는 잘 모르겠네요.
 아시는분 알려주시면 감사드리겠습니다.
 
-이상 Xcode12에서 시뮬레이터 빌드 오류 원인 및 해결방법에 대해 살펴봤습니다. (👨🏻‍💻지식이 +7 늘었다.)
+이상 Xcode12에서 시뮬레이터 빌드 오류 원인 및 해결방법에 대해 살펴봤습니다. (👨🏻‍💻지식이 +10 늘었다. <-- 이번포스트는 지식 + 10 정도 되쥬? 인정이쥬? 🤣)
 
 다음 포스트에서 또 만나요~ 🚀😄(아마도 내년에~~)
 
-**[참고]**
+**[참 고]**
+
 
 - [CPU Architectures](https://docs.elementscompiler.com/Platforms/Cocoa/CpuArchitectures/)
+
 - [Build Setting Reference](https://developer.apple.com/library/archive/documentation/DeveloperTools/Reference/XcodeBuildSettingRef/1-Build_Setting_Reference/build_setting_ref.html#//apple_ref/doc/uid/TP40003931-CH3-SW157)
+
 - [Xcode Build Settings](https://xcodebuildsettings.com/#group-source-versioning)
+
 - [Deep dive — Xcode Build Settings. With Xcode build settings we can… | by Prasanna Aithal | Mac O’Clock | Medium](https://medium.com/macoclock/deep-drive-xcode-build-settings-827c3ce4811c)
+
 - [Wrestling with Xcode 12 and ARM64 | by Johny Urgiles | Sep, 2020 | Medium](https://medium.com/@johny.urgiles/wrestling-with-xcode-12-and-arm64-6c7977922abb)
-- [ARM-Wrestling Your iOS Simulator Builds – Weaponized Fluff](https://apontious.com/2020/08/23/arm-wrestling-your-ios-simulator-builds/)
+
+- [ARM-Wrestling Your iOS Simulator Builds – Weaponized Fluff](https://apontious.com/2020/08/23/arm-wrestling-your-ios-
+simulator-builds/)
+
 - [iOS Devices: Releases, Firmware, Instruction Sets, Screen Sizes](https://www.innerfence.com/howto/apple-ios-devices-dates-versions-instruction-sets)
+
 - [Xcode 12 beta 4 - error compiling … | Apple Developer Forums](https://developer.apple.com/forums/thread/656509)
+
 - [cocoapods - Xcode 12 build target in wrong order? - Stack Overflow](https://stackoverflow.com/questions/63391793/xcode-12-build-target-in-wrong-order)
+
 - [Xcode 12, building for iOS Simulator, but linking in object file built for iOS, for architecture arm64 - Stack Overflow](https://stackoverflow.com/questions/63607158/xcode-12-building-for-ios-simulator-but-linking-in-object-file-built-for-ios)
+
 - [What is Build Active Architecture Only | @samwize](https://samwize.com/2015/01/14/what-is-build-active-architecture-only/)
+
 - [https://stackoverflow.com/questions/6151549/how-can-i-build-a-specific-architecture-using-xcodebuild](https://stackoverflow.com/questions/6151549/how-can-i-build-a-specific-architecture-using-xcodebuild)
-- [ios - Setting “Build Active Architectures Only” To “YES” Pros vs Cons? - Stack Overflow](https://stackoverflow.com/questions/27017523/setting-build-active-architectures-only-to-yes-pros-vs-cons)
+
+- [ios - Setting “Build Active Architectures Only” To “YES” Pros vs Cons? - Stack Overflow](https://stackoverflow.com/
+questions/27017523/setting-build-active-architectures-only-to-yes-pros-vs-cons)
+
 - [cocoapods - Xcode 12 build target in wrong order? - Stack Overflow](https://stackoverflow.com/a/63405201)
+
 - [ios - What’s the difference between “Architectures” and “Valid Architectures” in Xcode Build Settings? - Stack Overflow](https://stackoverflow.com/questions/12701188/whats-the-difference-between-architectures-and-valid-architectures-in-xcode)
+
 - [https://developer.apple.com/library/archive/documentation/DeveloperTools/Reference/XcodeBuildSettingRef/1-Build_Setting_Reference/build_setting_ref.html#//apple_ref/doc/uid/TP40003931-CH3-SW59](https://stackoverflow.com/questions/6151549/how-can-i-build-a-specific-architecture-using-xcodebuild)
+
 - [Xcode 12, building for iOS Simulator, but linking in object file built for iOS, for architecture arm64 - Stack Overflow](https://stackoverflow.com/questions/63607158/xcode-12-building-for-ios-simulator-but-linking-in-object-file-built-for-ios/64139830#64139830)
+
 - [Xcode Build Active Architecture Only](https://useyourloaf.com/blog/xcode-build-active-architecture-only/)
+
 - [https://pewpewthespells.com/blog/buildsettings.html#action](https://stackoverflow.com/questions/6151549/how-can-i-build-a-specific-architecture-using-xcodebuild)
+
 - [Xcode Build Settings](https://xcodebuildsettings.com/#excluded_archs)
+
 - [https://msolarana.netlify.app/2020/08/02/broken-builds-with-universal-xcode/](https://stackoverflow.com/questions/6151549/how-can-i-build-a-specific-architecture-using-xcodebuild)
+
 - [Xcode 12GM Build issues — Simulator /Device Cracked | by Abhishek Bedi | Sep, 2020 | Medium](https://medium.com/@abhishekbedi/xcode-12gm-build-issues-sim-device-cracked-cce7c5620646)
+
 - [https://stackoverflow.com/questions/63607158/xcode-12-building-for-ios-simulator-but-linking-in-object-file-built-for-ios](https://stackoverflow.com/questions/6151549/how-can-i-build-a-specific-architecture-using-xcodebuild)
+
 - [What are the universal binary codes for Xcode? - Quora](https://www.quora.com/What-are-the-universal-binary-codes-for-Xcode)
+
 - [https://help.apple.com/xcode/mac/8.0/#/itcaec37c2a6?sub=devf0a9d5aca](https://stackoverflow.com/questions/6151549/how-can-i-build-a-specific-architecture-using-xcodebuild)

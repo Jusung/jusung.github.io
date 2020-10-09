@@ -171,33 +171,32 @@ Build Setting에 `EXCLUDED_ARCHS` 항목에
 **[참 고]**
 
 
+
 - [CPU Architectures](https://docs.elementscompiler.com/Platforms/Cocoa/CpuArchitectures/)
 
 - [Build Setting Reference](https://developer.apple.com/library/archive/documentation/DeveloperTools/Reference/XcodeBuildSettingRef/1-Build_Setting_Reference/build_setting_ref.html#//apple_ref/doc/uid/TP40003931-CH3-SW157)
 
 - [Xcode Build Settings](https://xcodebuildsettings.com/#group-source-versioning)
 
-- [Deep dive — Xcode Build Settings. With Xcode build settings we can… | by Prasanna Aithal | Mac O’Clock | Medium](https://medium.com/macoclock/deep-drive-xcode-build-settings-827c3ce4811c)
+- [Deep dive Xcode Build Settings](https://medium.com/macoclock/deep-drive-xcode-build-settings-827c3ce4811c)
 
-- [Wrestling with Xcode 12 and ARM64 | by Johny Urgiles | Sep, 2020 | Medium](https://medium.com/@johny.urgiles/wrestling-with-xcode-12-and-arm64-6c7977922abb)
+- [Wrestling with Xcode 12 and ARM64](https://medium.com/@johny.urgiles/wrestling-with-xcode-12-and-arm64-6c7977922abb)
 
-- [ARM-Wrestling Your iOS Simulator Builds – Weaponized Fluff](https://apontious.com/2020/08/23/arm-wrestling-your-ios-
-simulator-builds/)
+- [ARM-Wrestling Your iOS Simulator Builds – Weaponized Fluff](https://apontious.com/2020/08/23/arm-wrestling-your-ios-simulator-builds/)
 
 - [iOS Devices: Releases, Firmware, Instruction Sets, Screen Sizes](https://www.innerfence.com/howto/apple-ios-devices-dates-versions-instruction-sets)
 
-- [Xcode 12 beta 4 - error compiling … | Apple Developer Forums](https://developer.apple.com/forums/thread/656509)
+- [Xcode 12 beta 4 - error compiling](https://developer.apple.com/forums/thread/656509)
 
 - [cocoapods - Xcode 12 build target in wrong order? - Stack Overflow](https://stackoverflow.com/questions/63391793/xcode-12-build-target-in-wrong-order)
 
 - [Xcode 12, building for iOS Simulator, but linking in object file built for iOS, for architecture arm64 - Stack Overflow](https://stackoverflow.com/questions/63607158/xcode-12-building-for-ios-simulator-but-linking-in-object-file-built-for-ios)
 
-- [What is Build Active Architecture Only | @samwize](https://samwize.com/2015/01/14/what-is-build-active-architecture-only/)
+- [What is Build Active Architecture Only](https://samwize.com/2015/01/14/what-is-build-active-architecture-only/)
 
 - [https://stackoverflow.com/questions/6151549/how-can-i-build-a-specific-architecture-using-xcodebuild](https://stackoverflow.com/questions/6151549/how-can-i-build-a-specific-architecture-using-xcodebuild)
 
-- [ios - Setting “Build Active Architectures Only” To “YES” Pros vs Cons? - Stack Overflow](https://stackoverflow.com/
-questions/27017523/setting-build-active-architectures-only-to-yes-pros-vs-cons)
+- [Setting Build Active Architectures Only To YES Pros vs Cons?](https://stackoverflow.com/questions/27017523/setting-build-active-architectures-only-to-yes-pros-vs-cons)
 
 - [cocoapods - Xcode 12 build target in wrong order? - Stack Overflow](https://stackoverflow.com/a/63405201)
 
@@ -215,7 +214,7 @@ questions/27017523/setting-build-active-architectures-only-to-yes-pros-vs-cons)
 
 - [https://msolarana.netlify.app/2020/08/02/broken-builds-with-universal-xcode/](https://stackoverflow.com/questions/6151549/how-can-i-build-a-specific-architecture-using-xcodebuild)
 
-- [Xcode 12GM Build issues — Simulator /Device Cracked | by Abhishek Bedi | Sep, 2020 | Medium](https://medium.com/@abhishekbedi/xcode-12gm-build-issues-sim-device-cracked-cce7c5620646)
+- [Xcode 12GM Build issues](https://medium.com/@abhishekbedi/xcode-12gm-build-issues-sim-device-cracked-cce7c5620646)
 
 - [https://stackoverflow.com/questions/63607158/xcode-12-building-for-ios-simulator-but-linking-in-object-file-built-for-ios](https://stackoverflow.com/questions/6151549/how-can-i-build-a-specific-architecture-using-xcodebuild)
 

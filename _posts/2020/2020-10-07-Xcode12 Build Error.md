@@ -15,11 +15,11 @@ published: true
 
 ## TL;DR
 
-1. 빌드 오류 원인
+### 빌드 오류 원인
 
 - Xcode12에서 ARM기반 맥(애플실리콘)을 지원함에 따라 아이폰 시뮬레이터에 ARM용 아키텍쳐 arm64가 추가돼 발생
 
-2. 해결 방법
+### 해결 방법
 
 Build Setting에
 

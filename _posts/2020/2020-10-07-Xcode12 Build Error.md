@@ -17,6 +17,8 @@ published: true
 
 Build Setting에
 
+![pic]({{ site.baseurl }}/images/2020/Xcode Build Error0.png)
+
 1. `EXCLUDED_ARCHS`에 arm64를 추가
 2. `VALID_ARCH` 제거
 
@@ -168,6 +170,7 @@ Build Setting에 `EXCLUDED_ARCHS` 항목에
 아시는분 알려주시면 감사드리겠습니다.
 
 이상 Xcode12에서 시뮬레이터 빌드 오류 원인 및 해결방법에 대해 살펴봤습니다. 
+
 (👨🏻‍💻지식이 +10 늘었다. <-- 이번 포스트는 지식 + 10 정도 되쥬? 인정이쥬? 🤣)
 
 다음 포스트에서 또 만나요~ 🚀😄(아마도 내년에~~)

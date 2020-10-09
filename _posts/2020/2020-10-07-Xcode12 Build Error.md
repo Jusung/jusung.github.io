@@ -93,7 +93,7 @@ Xcode에 아이폰11 기기를 연결하고  debug 설정으로 Run을 실행하
 
 ![]({{ site.baseurl }}/images/2020/Xcode Build Error5.png)
 
-Build Setting의 이 옵션을 활성화 시키면 Xcode에서 빌드시 Valid Architectures를 참조하지 않고, **현재 연결된 기기를 감지해 그 기기에 맞는 아키텍쳐용 빌드만 생성**합니다. 다시말해 이 옵션을 활성화하고 아이폰11에 빌드를 하면 `arm64`용 바이너라만 빌드가 되는 것이죠.
+Build Setting의 이 옵션을 활성화 시키면 Xcode에서 빌드시 Valid Architectures를 참조하지 않고, **현재 연결된 기기를 감지해 그 기기에 맞는 아키텍쳐용 빌드만 생성**합니다. 다시말해 이 옵션을 활성화하고 아이폰11에 빌드를 하면 `arm64`용 바이너리만 빌드가 되는 것이죠.
 
 ![]({{ site.baseurl }}/images/2020/Xcode Build Error4.png)
 
@@ -177,7 +177,7 @@ Build Setting에 `EXCLUDED_ARCHS` 항목에
 
 이상 Xcode12에서 시뮬레이터 빌드 오류 원인 및 해결방법에 대해 살펴봤습니다.
 
-(👨🏻‍💻지식이 +10 늘었다. 이번 포스트는 지식 + 10 정도 되쥬? 인정이쥬? 🤣)
+(👨🏻‍💻지식이 +10 늘었다. 이번 포스트는 지식+10 정도 되쥬? 인정이쥬? 🤣)
 
 다음 포스트에서 또 만나요~ 🚀😄 (아마도 내년에~~)
 

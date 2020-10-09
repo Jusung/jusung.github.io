@@ -28,24 +28,25 @@ Build Setting에
 Xcode에서 빌드의 동작을 살펴보기 전에 우선 알아야할 내용이 있습니다.
 
 1. 아이폰은 기종에 따라 각기 다른 아키텍쳐의 CPU를 사용한다.
-
-**[CPU 아키텍쳐 종류 및 사용하는 기기]**
-
 	- arm64 : 아이폰 5S 및 이후 기종 (6, 6S, SE, 7…)
 	- arm7 : 아이폰 5, 5C
 	- arm7s : iOS7 지원 옛날 기기
 
 ![]({{ site.baseurl }}/images/2020/Xcode Build Error1.png)
+*아이폰 기기별 사용 아키텍쳐*
+{: style="text-align: center;"}
 
 2. 빌드시 바이너리가 생성되는데, 이 바이너리는 각 CPU 아키텍쳐에 맞게 생성해야 한다. (아키텍쳐별로 기계어 구조 및 동작이 다름)
 
 이제 본격적으로 설명을 시작하겠습니다.
 
-만약 앱을 만들었는데, 그 앱이 아이폰 5S에서부터 최신기기인 iPhone 11까지 동작하도록 하려면 빌드를 어떻게 해야할까요? `arm64`, `arm7`, `arm7s` 바이너리를 각각 생성해 원하는 모든 기기에서 동작할 수 있도록 해야합니다.
+만약 앱을 만들었는데, 그 앱이 아이폰 5S에서부터 최신기기인 iPhone 11까지 동작하도록 하려면 어떻게 빌드해야할까요? `arm64`, `arm7`, `arm7s` 바이너리를 각각 생성해 원하는 모든 기기에서 동작할 수 있도록 해야합니다.
 
-Xcode에서 이와 관련해 설정하는 부분은 `Build Setting -> Valid Architectures` 에 있었습니다. (Xcode11 기준)
+Xcode에서 이와 관련해 설정하는 부분은 `Build Setting -> Valid Architectures` 에 있었습니다.
 
 ![]({{ site.baseurl }}/images/2020/Xcode Build Error2.png)
+* Valid Architectures 설정, Xcode11 *
+{: style="text-align: center;"}
 
 이 설정으로 빌드를 하면 Valid Architectures로 지정한 모든 아키텍쳐의 바이너리를 생성해 해당 아키텍쳐를 사용하는 모든 기기에서 동작하도록 합니다.
 
@@ -58,7 +59,9 @@ Xcode에서 이와 관련해 설정하는 부분은 `Build Setting -> Valid Arch
 
 다음 위치에 SKDSetting 파일에 시뮬레이터 아키텍쳐 정보가 `x86_64`라는 것을 확인할 수 있습니다.
 
-`/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/SDKSettings.json`
+```
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/SDKSettings.json
+```
 
 ![]({{ site.baseurl }}/images/2020/Xcode Build Error3.png)
 
@@ -69,47 +72,49 @@ Xcode에 아이폰11 기기를 연결하고  debug 설정으로 Run을 실행하
 Valid Architecture에 지정한 `arm64`, `arm7`, `arm7s` 용 빌드를 생성해 기기에 심습니다.
 그런데 여기서 질문이 한가지 듭니다.
 
-“아이폰11은 `arm64` 아키텍쳐를 사용하는데, `arm64` 바이너리만 만들면 되지 굳이 `arm7`, `arm7s` 바이너리까지 만들 필요가 있을까?”
+> 아이폰11은 `arm64` 아키텍쳐를 사용하는데, `arm64` 바이너리만 만들면 되지 굳이 `arm7`, `arm7s` 바이너리까지 만들 필요가 있을까?
 
 그렇습니다. 이럴때 사용하기 위한 옵션이 `Build Active Architecture Only`입니다.
 
 ![]({{ site.baseurl }}/images/2020/Xcode Build Error5.png)
 
-Build Setting의 이 옵션을 활성화 시키면 Xcode가 빌드시 Valid Architectures를 참조하지 않고, 현재 연결된 기기를 감지해 그 기기에 맞는 아키텍쳐용 빌드만 생성합니다. 다시말해 이 옵션을 활성화하고 아이폰11에 빌드를 하면 arm64용 바이너라만 빌드가 되는 것이죠.
+Build Setting의 이 옵션을 활성화 시키면 Xcode가 빌드시 Valid Architectures를 참조하지 않고, **현재 연결된 기기를 감지해 그 기기에 맞는 아키텍쳐용 빌드만 생성**합니다. 다시말해 이 옵션을 활성화하고 아이폰11에 빌드를 하면 `arm64`용 바이너라만 빌드가 되는 것이죠.
 
 시뮬레이터도 마찬가지 입니다. Xcode가 시뮬레이터 아키텍쳐를 감지해 해당하는 아키텍쳐 바이너리를 생성해 심습니다. 이 경우에는 `x86_64` 아키텍쳐 용 바이너리를 만듭니다.
 
-이 옵션을 왜 debug 설정에서만 true로 설정해 사용하는지 이제 이해가 되시죠?
+이 옵션을 왜 debug 설정에서만 true로 설정해 사용하는지는 이제 이해가 되시죠?
 
 여기까지가 Xcode12 이전에 빌드 수행시 기기 및 시뮬레이터에서 동작하던 방식입니다.
+이제 Xcode12에서 달라진 동작에 대해 알아보겠습니다.
 
 ## Xcode12 에서 동작하는 방식
 
 먼저 Xcode12의 [Release Note](https://developer.apple.com/documentation/xcode-release-notes/xcode-12-release-notes)를 살펴보겠습니다.
 
 ![]({{ site.baseurl }}/images/2020/Xcode Build Error6.png)
+*Xcode12의 Release Note 내용의 일부*
+{: style="text-align: center;"}
+
 
 관련해서 얘기하고 있는 것은 크게 세 가지 입니다.
 
-1. Build Setting에 Valid Architectures(VALID_ARCHS)가 더 이상 포함되지 않음
-2.  Valid Architectures 설정 대신 EXCLUDED_ARCHS 설정이 생김
-3. 기존 Valid Architectures가 설정돼 있으면 해당 정보는 사용자 정의 섹션(User-Defined)에 노출됨
+1. Build Setting에 `Valid Architectures(VALID_ARCHS)`가 더 이상 포함되지 않음 (이 설정을 사용하는 것을 장려하지 않음)
+2.  Valid Architectures 설정 대신 `EXCLUDED_ARCHS` 설정이 생김
+3. 기존 Valid Architectures 내용은 사용자 정의 섹션(User-Defined)에 노출됨
 
 ![]({{ site.baseurl }}/images/2020/Xcode Build Error7.png)
+*스크린샷을 보시면 `Valid Architectures(VALID_ARCHS)` 설정이 더 이상 Architectures 섹션에 있지않고 User-Defined섹션에 노출된 것을 확인하실 수 있습니다*
+{: style="text-align: center;"}
 
-[스크린샷을 보시면 `Valid Architectures(VALID_ARCHS)` 설정이 더 이상 Architectures 섹션에 있지않고 User-Defined섹션에 노출된 것을 확인하실 수 있습니다.]
-
-정리하자면 기존에는 빌드시 **원하는 아키텍쳐를 지정**하는 방식을 사용했는데, Xcode12에서는 반대로 원하지 않는 빌드시 **제외시킬 아키텍쳐를 지정**하는 방식으로 바뀐 것입니다.
+정리하자면 기존에는 빌드시 **원하는 아키텍쳐를 지정**하는 방식을 사용했는데, Xcode12에서는 반대로 빌드시 **제외시킬 아키텍쳐를 지정**하는 방식을 사용(필수x, 권장하는 부분)하는 쪽으로 바꼈습니다.
 
 Xcode12에서 왜 이렇게 변경한걸까요?
 
-바로 앞으로 출시될 ARM기반 맥북 때문입니다. 애플에서 머지않아 ARM기반 맥이 출시됩니다. 그동안 맥은 인텔 CPU기반이었지만 ARM용 맥도 출시되는 것입니다.
+바로 앞으로 출시될 ARM기반 맥북 때문입니다. 애플에서 머지않아 ARM기반 맥이 출시됩니다. 그동안 맥은 인텔 CPU기반의 맥이었습니다.(더 거슬러 올라가면 powerpc) 하지만 곧 ARM용 맥도 출시가 되서 앞으로는 인텔 CPU 기반 맥과, ARM용 맥이 둘다 존재할 수 있는 상황이 된 것입니다.
 
-이 지점에서 시뮬레이터 호환성 이슈가 발생합니다. 앞서 언급드린것처럼 아이폰 시뮬레이터는 맥의 아키텍쳐를 따릅니다. 현재 아이폰 시뮬레이터의 아키텍쳐는 `x86_64`입니다. ARM기반 맥은 당연히 `x86_64` 구조가 아닙니다. ARM기반 맥은 `arm64`구조를 사용합니다.
+앞서 언급드린것처럼 아이폰 시뮬레이터는 맥의 아키텍쳐를 따릅니다. 현재 아이폰 시뮬레이터의 아키텍쳐는 `x86_64`입니다. ARM기반 맥은 `arm64`구조를 사용합니다. Xcode12는 인텔 CPU 맥에서 ARM용 맥으로 넘어가는 과도기에 있는 앱으로 두개 아키텍쳐 모두 지원합니다. 다시말해 현재 사용 중인 `x86_64` 아이폰 시뮬레이터를 지원하고 앞으로 나올 `arm64`도 지원합니다.
 
-Xcode12는 인텔 CPU 맥에서 ARM용 맥으로 넘어가는 과도기에 있는 앱으로 두개 아키텍쳐 모두 지원합니다. 다시말해 현재 사용 중인 `x86_64` 아이폰 시뮬레이터를 지원하고 앞으로 나올 `arm64`도 지원합니다.
-
-여기서 문제가 발생합니다.
+이 지점에서 시뮬레이터 호환성 이슈가 발생합니다. 
 
 전에는 시뮬레이터를 선택 후 빌드를 하면 `x86_64`용 빌드를 했는데, Xcode 12에서 시뮬레이터는 `x86_64`, `arm64`를 다 지원하기때문에 `x86_64`용과, `arm64`용으로 빌드를 수행합니다. 이 과정에서 현재 맥은 `x86_64`용 맥이기 때문에 `arm64`용 빌드 수행시 에러가 발생합니다.
 
@@ -124,8 +129,8 @@ Xcode12는 인텔 CPU 맥에서 ARM용 맥으로 넘어가는 과도기에 있�
 이 설정을 Xcode12 에서 새롭게 추가된  `EXCLUDED_ARCHS`에 설정할 수 있습니다.
 
 ![]({{ site.baseurl }}/images/2020/Xcode Build Error9.png)
-
-<EXCLUDED_ARCHS 변수를 설정하면 Xcode에서 Excluded Architectures 섹션에 노출됩니다.>
+*EXCLUDED_ARCHS 변수를 설정하면 Xcode에서 Excluded Architectures 섹션에 노출됩니다.*
+{: style="text-align: center;"}
 
 Build Setting에 `EXCLUDED_ARCHS` 항목에 “빌드를 시뮬레이터에 하는 경우에는 arm64 바이너리용 빌드는 하지 말아줘.” 라고 지정을 하면 빌드시 `arm64` 빌드를 수행하지 않아 에러가 발생하지 않습니다.
 

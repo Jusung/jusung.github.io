@@ -47,15 +47,16 @@ Build Setting에
 Xcode에서 이와 관련해 설정하는 부분은 `Build Setting -> Valid Architectures` 에 있었습니다.
 
 ![]({{ site.baseurl }}/images/2020/Xcode Build Error2.png)
-* Valid Architectures 설정, Xcode11 *
+*Valid Architectures 설정, Xcode11*
 {: style="text-align: center;"}
 
 이 설정으로 빌드를 하면 Valid Architectures로 지정한 모든 아키텍쳐 바이너리를 생성해 해당 아키텍쳐를 사용하는 모든 기기에서 동작할수 있게 합니다.
 
-여기서 질문! ✋그렇다면 아이폰 시뮬레이터는 어떤 아키텍쳐를 사용할까요?
+여기서 질문! ✋
+그렇다면 아이폰 시뮬레이터는 어떤 아키텍쳐를 사용할까요?
 아이폰 5 시뮬레이터면 `arm7`을 아이폰 11시뮬레이터면 `arm64`를 사용할까요?
 
-아닙니다!
+❌아닙니다!
 
 아이폰 시뮬레이터는 맥에서 동작합니다. 그래서 아이폰 시뮬레이터는 맥 CPU의 아키텍쳐를 따릅니다. 요즘 맥은 core i5, i7 등의 인텔 CPU를 사용하고 있고, 이 CPU는 `x86_64`라는 아티텍쳐를 사용합니다. 그래서 시뮬레이터는 `x86_64`라는 아키텍쳐를 사용합니다.
 

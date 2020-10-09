@@ -151,7 +151,7 @@ Build Setting에 `EXCLUDED_ARCHS` 항목에 “빌드를 시뮬레이터에 하�
 이상 Xcode12에서 시뮬레이터 빌드 오류 원인 및 해결방법에 대해 살펴봤습니다. (👨🏻‍💻지식이 +7 늘었다.)
 
 다음 포스트에서 또 만나요~ 🚀😄(아마도 내년에~~)
-****
+
 **[참고]**
 
 - [CPU Architectures](https://docs.elementscompiler.com/Platforms/Cocoa/CpuArchitectures/)

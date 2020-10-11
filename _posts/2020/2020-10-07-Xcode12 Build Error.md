@@ -4,7 +4,7 @@ title: "[Xcode] Xcode12에서 시뮬레이터 빌드 오류 원인 및 해결방
 category:
   - Xcode
 tags:
-  - Xcode 12.0
+  - Xcode 12.0, Build Setting
 comments: true
 published: true
 ---
@@ -152,7 +152,7 @@ Xcode12는 인텔 CPU 맥에서 ARM용 맥으로 넘어가는 과도기에 있�
 {: style="text-align: center;"}
 
 빌드시 이 에러를 막기 위해서는 어떻게 해야할까요?
-그렇습니다. 현재는 `arm64`용 맥북이 출시되지 않았기 때문에 시뮬레이터 빌드시 `arm6`4용 빌드를 진행하지 않도록 해야합니다.
+그렇습니다. 현재는 `arm64`용 맥북이 출시되지 않았기 때문에 시뮬레이터 빌드시 `arm64`용 빌드를 진행하지 않도록 해야합니다.
 
 이 설정을 Xcode12 에서 새롭게 추가된  `EXCLUDED_ARCHS`에 설정할 수 있습니다.
 

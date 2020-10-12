@@ -40,8 +40,8 @@ Build Setting에
 첫째, 아이폰은 기종에 따라 각기 다른 아키텍쳐의 CPU를 사용한다.
 
 	- arm64 : 아이폰 5S 및 이후 기종 (6, 6S, SE, 7…)
-	- arm7 : 아이폰 5, 5C
-	- arm7s : iOS7 지원 옛날 기기
+	- arm7s : 아이폰 5, 5C
+	- arm7 : iOS7 지원 옛날 기기
 
 ![]({{ site.baseurl }}/images/2020/Xcode Build Error1.png)
 *아이폰 기기별 사용 아키텍쳐*

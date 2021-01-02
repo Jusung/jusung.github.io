@@ -16,8 +16,8 @@ RxSwift 6이 릴리스 됐습니다. 이번 포스트에서는 RxSwift 6의 변�
 ## 목차
 1. 새 로고
 2. `Binder`가 RxCocoa에서 RxSwift로 이동
-3. ⭐️ `withUnretained` 추가
-4. ⭐️ `@dynamicMemberLookup`을 사용한 `Binder`의 자동 합성
+3. `withUnretained` 추가 (⭐️)
+4. `@dynamicMemberLookup`을 사용한 `Binder`의 자동 합성 (⭐️)
 5. `Infallible`
 6. `Observable<Data>`를 위한 `decode(type:decoder:)`연산자 제공
 7. `driver()`, `emit()`에 다중 바인딩 제공
@@ -43,7 +43,7 @@ viewModel.isButtonEnable.bind(to: myButton.rx.isEnabled)
 
 커뮤니티의 많은 요청에 따라 RxCocoa 모듈에 있던 `Binder`를  RxSwift로 이동했습니다. RxSwift 6부터는 더 이상 `Binder`를 사용하기 위해 RxCocoa 모듈을 import할 필요가 없습니다.
 
-## 3. ⭐️ `withUnretained` 추가
+## 3. `withUnretained` 추가 (⭐️ )
 클로저에서 `self`에 대한 약한 참조를 얻기 위해 보통 다음과 같은 코드를 사용합니다.
 
 ```swift
@@ -72,7 +72,7 @@ viewModel.importantInfo
 
 코드가 훨씬 깔끔해 졌습니다. 
 
-## 4. ⭐️ `@dynamicMemberLookup`을 사용한 `Binder`의 자동 합성
+## 4. `@dynamicMemberLookup`을 사용한 `Binder`의 자동 합성 (⭐️)
 RxSwift 에서는 특정 객체의 프로퍼티에 `Binding` 하기 위해  `.rx`라는 네임스페이스를 사용합니다.
 
 예를들어, 만약 다음과 같은 `MyView` 경우

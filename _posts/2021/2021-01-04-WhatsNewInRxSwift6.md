@@ -283,11 +283,12 @@ RxSwift 6에서는 많은 연산자의 이름을 Swift의 코드 가이드라인
 RxSwift 6의 모든 릴리스는 앞으로 XCFramework 번들로도 제공됩니다.
 
 ## 정리
-RxSwift 6에서는 이와같이 많은 기능이 추가되거나 변경 됐는데요. 이 포스트에서 소개하지 않은 소소한 개선사항이나 버그 수정도 있습니다. 더 자세한 내용은 [여기(release notes)](https://github.com/ReactiveX/RxSwift/releases/tag/6.0.0)에서 확인 가능합니다.
+RxSwift 6에서는 이와 같이 많은 기능이 추가되거나 변경 됐는데요. 이 포스트에서 소개하지 않은 소소한 개선사항이나 버그 수정도 있습니다. 더 자세한 내용은 [여기](https://github.com/ReactiveX/RxSwift/releases/tag/6.0.0)에서 확인 가능합니다.
 
 RxSwift 6를 확인하고 느낀점은 Swift에 Combine이 있지만, RxSwift를 이렇게 계속 보완/발전시키는걸 봐서는 RxSwift가 쉽게 Combine으로 대체되진 않을꺼란 생각이 드네요. 
 
 또 RxSwift의 main 메인테이너인 [Shai Mishali](https://twitter.com/freak4pc) 이분이 RxSwift뿐만아니라 Swift, Combine도 잘 하시는데, '역시 다른 언어를 잘하니 거기에서 이렇게 차용해 올 수 있구나?' 라는 생각도 했습니다. 너무 당연한 얘기지만요. 공부를 더 해야합니다. 😅
 
 이상 포스트를 마치겠습니다.
+
 👨🏻‍💻지식이 +5 늘었다. 다음 포스트에서 또 만나요 🚀😄

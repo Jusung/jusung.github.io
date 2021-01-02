@@ -120,7 +120,9 @@ viewModel.icon.drive(myView.rx.icon)
 
 행복하게도 Swift 5.1 부터 이 문제 해결을 위한 `@dynamicMemberLookup`을 제공해 줍니다. 
 
-RxSwift 6에서는 어떤 클래스든 모든 프로퍼티를 자동으로 합성해 `Binding`이 가능한 Reactive extension을 제공해줍니다. 👍 이제 프로퍼티를 `Binding`하기 위해 생성한 `Reactive extension`는 코드에서 완전히 제거 할 수 있습니다. 
+RxSwift 6에서는 어떤 클래스든 모든 프로퍼티를 자동으로 합성해 `Binding`이 가능한 Reactive extension을 제공해줍니다. 👍 
+
+이제 프로퍼티를 `Binding`하기 위해 생성한 `Reactive extension`는 코드에서 완전히 제거 할 수 있습니다. 
 
 앞으로 Xcode에서`AnyObject`를 상속하는 어떤 클래스에서든 `.rx`를 입력만 하면 즉각 자동으로 합성된 모든 프로퍼티의 `Binder`를 보실 수 있을 것입니다. 😆
 
@@ -150,7 +152,7 @@ Infallible<String>.create { observer in
 
 RxCocoa를 사용해 보셨다면 “그럼 `Driver`나 `Signal`과 차이점이 뭐지?” 라고 의아해 하실 수 있는데요.
 
-우선 `Driver`나 `Signal` 는 RxCocoa에 포함돼 있는 반면`Infallible`는 RxSwift에 포함돼 있습니다. 더 중요한 차이는`Driver`나 `Signal`는 항상 `MainScheduler`를 사용하고 `share()`를 사용해 자원을 공유합니다. 반면 `Infallible`는 이 경우에 해당하지 않는 완전히 새로운 타입의 기본 `Observable`입니다.
+우선 `Driver`나 `Signal`은 RxCocoa에 포함돼 있는 반면`Infallible`는 RxSwift에 포함돼 있습니다. 더 중요한 차이는`Driver`나 `Signal`는 항상 `MainScheduler`를 사용하고 `share()`를 사용해 자원을 공유합니다. 반면 `Infallible`는 이 경우에 해당하지 않는 완전히 새로운 타입의 기본 `Observable`입니다.
 
 ## 6. `Observable<Data>`를 위한 `decode(type:decoder:)`연산자 제공
 RxSwift 6에서는 `Data`를 방출하는 `Observable`에서 동작하는 `Combine`과 유사한 `decode` 연산자를 제공합니다.
@@ -282,5 +284,10 @@ RxSwift 6의 모든 릴리스는 앞으로 XCFramework 번들로도 제공됩니
 
 ## 정리
 RxSwift 6에서는 이와같이 많은 기능이 추가되거나 변경 됐는데요. 이 포스트에서 소개하지 않은 소소한 개선사항이나 버그 수정도 있습니다. 더 자세한 내용은 [여기(release notes)](https://github.com/ReactiveX/RxSwift/releases/tag/6.0.0)에서 확인 가능합니다.
-  
-**이상 포스트를 마??? 여기 닫는 문구 넣자. 지식 +5 늘었다. ㅇㅈ? ㅇㅇㅈ
+
+RxSwift 6를 확인하고 느낀점은 Swift에 Combine이 있지만, RxSwift를 이렇게 계속 보완/발전시키는걸 봐서는 RxSwift가 쉽게 Combine으로 대체되진 않을꺼란 생각이 드네요. 
+
+또 RxSwift의 main 메인테이너인 [Shai Mishali](https://twitter.com/freak4pc) 이분이 RxSwift뿐만아니라 Swift, Combine도 잘 하시는데, '역시 다른 언어를 잘하니 거기에서 이렇게 차용해 올 수 있구나?' 라는 생각도 했습니다. 너무 당연한 얘기지만요. 공부를 더 해야합니다. 😅
+
+이상 포스트를 마치겠습니다.
+👨🏻‍💻지식이 +5 늘었다. 다음 포스트에서 또 만나요 🚀😄

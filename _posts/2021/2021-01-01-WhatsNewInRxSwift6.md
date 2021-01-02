@@ -14,19 +14,19 @@ RxSwift 6이 릴리스 됐습니다. 이번 포스트에서는 RxSwift 6의 변�
 내용이 좀 많은데요. 개인적으로 가장 유용하다고 생각하는 기능 두 개를 목차에서 별⭐️로 표시해 두었습니다. 바쁘신 분들은 이 두 기능만은 꼭 확인하시길 추천드립니다.
 
 ## 목차
-- [새 로고](#새-로고)
-- [Binder가 RxCocoa에서 RxSwift로 이동](#binder가-rxcocoa에서-rxswift로-이동)
-- [⭐️ withUnretained 추가](#-withunretained-추가)
-- [⭐️ @dynamicMemberLookup을 사용한 Binder의 자동 합성](#-dynamicmemberlookup을-사용한-binder의-자동-합성)
-- [Infallible](#infallible)
-- [Observable<Data>를 위한 decode(type:decoder:)연산자 제공](#observabledata를-위한-decodetypedecoder연산자-제공)
-- [driver(), emit()에 다중 바인딩 제공](#driver-emit에-다중-바인딩-제공)
-- [Single의 구현을 Swift의 Result를 사용하도록 변경](#single의-구현을-swift의-result를-사용하도록-변경)
-- [distinctUntilChange(at:)연산자에서 Key Path 지원](#distinctuntilchangeat연산자에서-key-path-지원)
-- [ReplayRelay 연산자 추가](#replayrelay-연산자-추가)
-- [DisposeBag  함수 빌더 추가](#disposebag-함수-빌더-추가)
-- [여러 연산자의 이름이 변경 됨](#여러-연산자의-이름이-변경-됨)
-- [XCFrameworks 지원 개선](#xcframeworks-지원-개선)
+- 새 로고 [(바로가기)](#새-로고)
+- `Binder`가 RxCocoa에서 RxSwift로 이동 [(바로가기)](#binder가-rxcocoa에서-rxswift로-이동)
+- ⭐️ `withUnretained` 추가 [(바로가기)](#-withunretained-추가)
+- ⭐️ `@dynamicMemberLookup`을 사용한 `Binder`의 자동 합성 [(바로가기)](#-dynamicmemberlookup을-사용한-binder의-자동-합성)
+- `Infallible`[(바로가기)](#infallible)
+- `Observable<Data>`를 위한 `decode(type:decoder:)`연산자 제공 [(바로가기)](#observabledata를-위한-decodetypedecoder연산자-제공)
+- `driver()`, `emit()`에 다중 바인딩 제공 [(바로가기)](#driver-emit에-다중-바인딩-제공)
+- `Single`의 구현을 `Swift`의 `Result`를 사용하도록 변경 [(바로가기)](#single의-구현을-swift의-result를-사용하도록-변경)
+- `distinctUntilChange(at:)`연산자에서 Key Path 지원 [(바로가기)](#distinctuntilchangeat연산자에서-key-path-지원)
+- `ReplayRelay` 연산자 추가 [(바로가기)](#replayrelay-연산자-추가)
+- `DisposeBag` 함수 빌더 추가 [(바로가기)](#disposebag-함수-빌더-추가)
+- 여러 연산자의 이름이 변경 됨 [(바로가기)](#여러-연산자의-이름이-변경-됨)
+- XCFrameworks 지원 개선 [(바로가기)](#xcframeworks-지원-개선)
 
 ### 새 로고
 로고가 좀 더 귀엽게 변경됐습니다. ☺️

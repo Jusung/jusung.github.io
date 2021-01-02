@@ -15,18 +15,18 @@ RxSwift 6이 릴리스 됐습니다. 이번 포스트에서는 RxSwift 6의 변�
 
 ## 목차
 - [새 로고](#새-로고)
-- `Binder`가 RxCocoa에서 RxSwift로 이동
-- ⭐️ `withUnretained` 추가
-- ⭐️ `@dynamicMemberLookup`을 사용한 `Binder`의 자동 합성
-- `Infallible`
-- `Observable<Data>`를 위한 `decode(type:decoder:)`연산자 제공
-- `driver()`, `emit()`에 다중 바인딩 제공
-- `Single`의 구현을 `Swift`의 `Result`를 사용하도록 변경
-- `distinctUntilChange(at:)`연산자에서 Key Path 지원
-- `ReplayRelay` 연산자 추가
-- `DisposeBag`  함수 빌더 추가
-- 여러 연산자의 이름이 변경 됨
-- XCFrameworks 지원 개선
+- [`Binder`가 RxCocoa에서 RxSwift로 이동](#binder가-rxcocoa에서-rxswift로-이동)
+- [⭐️ `withUnretained` 추가](#-withunretained-추가)
+- [⭐️ `@dynamicMemberLookup`을 사용한 `Binder`의 자동 합성](#-dynamicmemberlookup을-사용한-binder의-자동-합성)
+- [`Infallible`](#infallible)
+- [`Observable<Data>`를 위한 `decode(type:decoder:)`연산자 제공](#observabledata를-위한-decodetypedecoder연산자-제공)
+- [`driver()`, `emit()`에 다중 바인딩 제공](#driver-emit에-다중-바인딩-제공)
+- [`Single`의 구현을 `Swift`의 `Result`를 사용하도록 변경](#single의-구현을-swift의-result를-사용하도록-변경)
+- [`distinctUntilChange(at:)`연산자에서 Key Path 지원](#distinctuntilchangeat연산자에서-key-path-지원)
+- [`ReplayRelay` 연산자 추가](#replayrelay-연산자-추가)
+- [`DisposeBag`  함수 빌더 추가](#disposebag-함수-빌더-추가)
+- [여러 연산자의 이름이 변경 됨](#여러-연산자의-이름이-변경-됨)
+- [XCFrameworks 지원 개선](#xcframeworks-지원-개선)
 
 ### 새 로고
 로고가 좀 더 귀엽게 변경됐습니다. ☺️

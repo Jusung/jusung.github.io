@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "RxSwift 6 의 변경사항 (What’s new in RxSwift 6 ?)"
+title: "RxSwift 6의 변경사항 (What’s new in RxSwift 6?)"
 category:
   - RxSwift
 tags:

@@ -14,26 +14,26 @@ RxSwift 6이 릴리스 됐습니다. 이번 포스트에서는 RxSwift 6의 변�
 내용이 좀 많은데요. 개인적으로 가장 유용하다고 생각하는 기능 두 개를 목차에서 별⭐️로 표시해 두었습니다. 바쁘신 분들은 이 두 기능만은 꼭 확인하시길 추천드립니다.
 
 ## 목차
-- 새 로고 [(바로가기)](#새-로고)
-- `Binder`가 RxCocoa에서 RxSwift로 이동 [(바로가기)](#binder가-rxcocoa에서-rxswift로-이동)
-- ⭐️ `withUnretained` 추가 [(바로가기)](#-withunretained-추가)
-- ⭐️ `@dynamicMemberLookup`을 사용한 `Binder`의 자동 합성 [(바로가기)](#-dynamicmemberlookup을-사용한-binder의-자동-합성)
-- `Infallible`[(바로가기)](#infallible)
-- `Observable<Data>`를 위한 `decode(type:decoder:)`연산자 제공 [(바로가기)](#observabledata를-위한-decodetypedecoder연산자-제공)
-- `driver()`, `emit()`에 다중 바인딩 제공 [(바로가기)](#driver-emit에-다중-바인딩-제공)
-- `Single`의 구현을 `Swift`의 `Result`를 사용하도록 변경 [(바로가기)](#single의-구현을-swift의-result를-사용하도록-변경)
-- `distinctUntilChange(at:)`연산자에서 Key Path 지원 [(바로가기)](#distinctuntilchangeat연산자에서-key-path-지원)
-- `ReplayRelay` 연산자 추가 [(바로가기)](#replayrelay-연산자-추가)
-- `DisposeBag` 함수 빌더 추가 [(바로가기)](#disposebag-함수-빌더-추가)
-- 여러 연산자의 이름이 변경 됨 [(바로가기)](#여러-연산자의-이름이-변경-됨)
-- XCFrameworks 지원 개선 [(바로가기)](#xcframeworks-지원-개선)
+1. 새 로고
+2. `Binder`가 RxCocoa에서 RxSwift로 이동
+3. ⭐️ `withUnretained` 추가
+4. ⭐️ `@dynamicMemberLookup`을 사용한 `Binder`의 자동 합성
+5. `Infallible`
+6. `Observable<Data>`를 위한 `decode(type:decoder:)`연산자 제공
+7. `driver()`, `emit()`에 다중 바인딩 제공
+8. `Single`의 구현을 `Swift`의 `Result`를 사용하도록 변경
+9. `distinctUntilChange(at:)`연산자에서 Key Path 지원
+10. `ReplayRelay` 연산자 추가
+11. `DisposeBag` 함수 빌더 추가
+12. 여러 연산자의 이름이 변경 됨
+13. XCFrameworks 지원 개선
 
-### 새 로고
+### 1. 새 로고
 로고가 좀 더 귀엽게 변경됐습니다. ☺️
 
 ![RxswiftNewLogo]({{ site.baseurl }}/images/2021/RxswiftNewLogo.png)
 
-### `Binder`가 RxCocoa에서 RxSwift로 이동
+### 2. `Binder`가 RxCocoa에서 RxSwift로 이동
 
 ```swift
 viewModel.isButtonEnable.bind(to: myButton.rx.isEnabled)
@@ -43,7 +43,7 @@ viewModel.isButtonEnable.bind(to: myButton.rx.isEnabled)
 
 커뮤니티의 많은 요청에 따라 RxCocoa 모듈에 있던 `Binder`를  RxSwift로 이동했습니다. RxSwift 6부터는 더 이상 `Binder`를 사용하기 위해 RxCocoa 모듈을 import할 필요가 없습니다.
 
-### ⭐️ `withUnretained` 추가
+### 3. ⭐️ `withUnretained` 추가
 클로저에서 `self`에 대한 약한 참조를 얻기 위해 보통 다음과 같은 코드를 사용합니다.
 
 ```swift
@@ -72,7 +72,7 @@ viewModel.importantInfo
 
 코드가 훨씬 깔끔해 졌습니다. 
 
-### ⭐️ `@dynamicMemberLookup`을 사용한 `Binder`의 자동 합성
+### 4. ⭐️ `@dynamicMemberLookup`을 사용한 `Binder`의 자동 합성
 RxSwift 에서는 특정 객체의 프로퍼티에 `Binding` 하기 위해  `.rx`라는 네임스페이스를 사용합니다.
 
 예를들어, 만약 다음과 같은 `MyView` 경우
@@ -128,7 +128,7 @@ RxSwift 6에서는 어떤 클래스든 모든 프로퍼티를 자동으로 합�
 
 참고로 이미 선언돼 있는 `Reactive extension`은 자동으로 합성되어 생성되는 `Reactive extension`보다 우선해서 실행됩니다. 그렇기 때문에 커스텀하게 구현한 `Reactive extension`이 자동으로 생성된 `Reactive extension`에 의해 오버라이딩 되지 않을까 걱정하지 않으셔도 됩니다.
 
-### `Infallible`
+### 5. `Infallible`
 `Infallible`는 `Observable`과 한가지가 다른 새로운 타입입니다.
 `Infallible`는 실패하지 않습니다. 다시 말하면 `.error` 이벤트를 방출(emit)하지 않습니다.
 
@@ -152,7 +152,7 @@ RxCocoa를 사용해 보셨다면 “그럼 `Driver`나 `Signal`과 차이점이
 
 우선 `Driver`나 `Signal` 는 RxCocoa에 포함돼 있는 반면`Infallible`는 RxSwift에 포함돼 있습니다. 더 중요한 차이는`Driver`나 `Signal`는 항상 `MainScheduler`를 사용하고 `share()`를 사용해 자원을 공유합니다. 반면 `Infallible`는 이 경우에 해당하지 않는 완전히 새로운 타입의 기본 `Observable`입니다.
 
-### `Observable<Data>`를 위한 `decode(type:decoder:)`연산자 제공
+### 6. `Observable<Data>`를 위한 `decode(type:decoder:)`연산자 제공
 RxSwift 6에서는 `Data`를 방출하는 `Observable`에서 동작하는 `Combine`과 유사한 `decode` 연산자를 제공합니다.
 
 ```swift
@@ -161,7 +161,7 @@ service.rx
        .decode(type: [User].self, decoder: JSONDecoder()) // Observable<[User]> 반환
 ```
 
-### `driver()`, `emit()`에 다중 바인딩 제공
+### 7. `driver()`, `emit()`에 다중 바인딩 제공
 RxSwift 5에서 처음으로 `bind`에 다중 바인딩이 제공 됐습니다.
 
 ```swift
@@ -174,7 +174,7 @@ viewModel.string.drive(input1, input2, input3)
 viewModel.number.emit(input4, input5)
 ```
 
-### `Single`의 구현을 `Swift`의 `Result`를 사용하도록 변경
+### 8. `Single`의 구현을 `Swift`의 `Result`를 사용하도록 변경
 RxSwift 5까지 `Single`은 커스텀 이벤트를 사용했습니다.
 
 ```swift
@@ -210,7 +210,7 @@ single.subscribe(
 )
 ```
 
-### `distinctUntilChange(at:)`연산자에서 Key Path 지원
+### 9. `distinctUntilChange(at:)`연산자에서 Key Path 지원
 `distinctUntilChange`는 비효율적인 중복작업을 피할 수 있게 해주는 매우 유용한 연산자 입니다. 이 연산자를 RxSwift 5까지는 이렇게 사용했습니다.
 
 ```swift
@@ -222,7 +222,7 @@ RxSwift 6부터는 추가적으로 Key Path를 이용해 보다 간략하게 코
 myStream.distinctUntilChanged(at: \.searchTerm)
 ```
 
-### `ReplayRelay` 연산자 추가
+### 10. `ReplayRelay` 연산자 추가
  `Relay`는 `Subject`의 wrapper로 스트림이 절대 실패(fail)하거나 종료(complete)되지 않는 것을 보장합니다. RxSwift 6에서는 `ReplaySubject`를 wrapping한 `ReplayRelay`를 기존의 `BehaviorRelay`와 `PublishRelay`에 추가했습니다.
 
 `ReplayRelay`를 생성하는 방법은 `ReplaySubject`를 생성하는 방법과 완전히 동일합니다.
@@ -234,7 +234,7 @@ ReplaySubject<Int>.create(bufferSize: 3)
 ReplayRelay<Int>.create(bufferSize: 3)
 ```
 
-### `DisposeBag` 함수 빌더 추가
+### 11. `DisposeBag` 함수 빌더 추가
 RxSwift 6 에서는 `DisposeBag`에서 SwiftUI 같은 콤마(,)가 없는 함수 빌더가 추가 되었습니다.
 
 ```swift
@@ -256,7 +256,7 @@ disposeBag.insert {
 }
 ```
 
-### 여러 연산자의 이름이 변경 됨
+### 12. 여러 연산자의 이름이 변경 됨
 RxSwift 6에서는 많은 연산자의 이름을 Swift의 코드 가이드라인에 따라 변경했습니다.
 
 변경된 이름은 다음과 같습니다. (여기에 명시하지 않는 다른 연산자도 있을 수 있습니다.)
@@ -277,7 +277,7 @@ RxSwift 6에서는 많은 연산자의 이름을 Swift의 코드 가이드라인
 | observeOn(_:) | observe(on:) |
 | subscribeOn(_:) | subscribe(on:) |
 
-### XCFrameworks 지원 개선
+### 13. XCFrameworks 지원 개선
 RxSwift 6의 모든 릴리스는 앞으로 XCFramework 번들로도 제공됩니다.
 
 ## 정리

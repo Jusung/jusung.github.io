@@ -128,7 +128,7 @@ RxSwift 6에서는 어떤 클래스든 모든 프로퍼티를 자동으로 합�
 
 ![ReactiveExtension]({{ site.baseurl }}/images/2021/ReactiveExtension.jpg)
 
-참고로 이미 선언돼 있는 `Reactive extension`은 자동으로 합성되어 생성되는 `Reactive extension`보다 우선해서 실행됩니다. 그렇기 때문에 커스텀하게 구현한 `Reactive extension`이 자동으로 생성된 `Reactive extension`에 의해 오버라이딩 되지 않을까 걱정하지 않으셔도 됩니다.
+참고로 이미 선언돼 있는 Reactive extension은 자동으로 합성되어 생성되는 Reactive extension보다 우선해서 실행됩니다. 그렇기 때문에 커스텀하게 구현한 Reactive extension이 자동으로 생성된 Reactive extension에 의해 오버라이딩 되지 않을까 걱정하지 않으셔도 됩니다.
 
 ## 5. `Infallible`
 `Infallible`는 `Observable`과 한가지가 다른 새로운 타입입니다.

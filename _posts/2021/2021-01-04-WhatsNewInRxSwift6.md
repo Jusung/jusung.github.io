@@ -164,7 +164,7 @@ service.rx
 ```
 
 ## 7. `driver()`, `emit()`에 다중 바인딩 제공
-RxSwift 5에서 처음으로 `bind`에 다중 바인딩이 제공 됐습니다.
+RxSwift 5에서 처음으로 `Binder`에 다중 바인딩이 제공 됐습니다.
 
 ```swift
 viewModel.string.bind(to: input1, input2, input3)

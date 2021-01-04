@@ -43,7 +43,7 @@ viewModel.isButtonEnable.bind(to: myButton.rx.isEnabled)
 
 커뮤니티의 많은 요청에 따라 RxCocoa 모듈에 있던 `Binder`를  RxSwift로 이동했습니다. RxSwift 6부터는 더 이상 `Binder`를 사용하기 위해 RxCocoa 모듈을 import할 필요가 없습니다.
 
-## 3. `withUnretained` 추가 (⭐️ )
+## 3. `withUnretained` 추가 (⭐️)
 클로저에서 `self`에 대한 약한 참조를 하고 클로저 안의 코드가 끝까지 실행되는 것을 보장하기 위해 보통 다음과 같은 코드를 사용합니다.
 
 ```swift

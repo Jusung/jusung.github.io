@@ -237,7 +237,7 @@ ReplayRelay<Int>.create(bufferSize: 3)
 ```
 
 ## 11. `DisposeBag` 함수 빌더 추가
-RxSwift 6 에서는 `DisposeBag`에서 SwiftUI 같은 콤마(,)가 없는 함수 빌더가 추가 되었습니다.
+RxSwift 6 에서는 `DisposeBag`에 SwiftUI 같은 콤마(,)가 없는 함수 빌더가 추가 되었습니다.
 
 ```swift
 var disposeBag = DisposeBag { 

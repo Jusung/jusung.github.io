@@ -57,7 +57,7 @@ viewModel.importantInfo
 
 이런 코드를 한번만 작성하는 것이라면 괜찮겠지만, 실제로는 여러번 작성해야하기 때문에 코딩시 가독성과 효율성이 떨어집니다.  
 
-[RxSwiftExt](https://github.com/RxSwiftComunity/RxSwiftExt)(RxSwift에 없는 연산자를 추가로 구현한 오픈소스) 라는 익스텐션에 `withUnretained` 라는 연산자가 있는데, 이 연산자의 인기가 계속 올라감에 따라 이 연산자를 RxSwift에 공식적으로 포함 시켰습니다. 
+[RxSwiftExt](https://github.com/RxSwiftComunity/RxSwiftExt)(RxSwift에 없는 연산자를 추가로 구현한 오픈소스) 라는 익스텐션에 `withUnretained` 라는 연산자가 있는데, 이 연산자의 인기가 계속 올라감에 따라 이 연산자를 RxSwift에 공식적으로 포함시켰습니다. 
 
 RxSwift 6부터는 위 코드를 `withUnretained`를 사용해 다음과 같이 작성할 수 있습니다.
 

@@ -237,7 +237,7 @@ ReplayRelay<Int>.create(bufferSize: 3)
 ```
 
 ## 11. `DisposeBag` 함수 빌더 추가
-RxSwift 6 에서는 `DisposeBag`에 SwiftUI 같은 콤마(,)가 없는 함수 빌더가 추가 되었습니다.
+RxSwift 6 에서는 `DisposeBag`에 SwiftUI 같이 콤마(,)가 없는 함수 빌더가 추가 되었습니다.
 
 ```swift
 var disposeBag = DisposeBag { 
@@ -261,7 +261,7 @@ disposeBag.insert {
 ## 12. 여러 연산자의 이름이 변경 됨
 RxSwift 6에서는 많은 연산자의 이름을 Swift의 코드 가이드라인에 따라 변경했습니다.
 
-변경된 이름은 다음과 같습니다. (여기에 명시하지 않는 다른 연산자도 있을 수 있습니다.)
+변경된 이름은 다음과 같습니다. (여기에 명시되지 않은 연산자가 있을 수 있습니다.)
 
 | RxSwift 5      | RxSwift 6 |
 | ----------- | ----------- |
@@ -287,7 +287,7 @@ RxSwift 6에서는 이와 같이 많은 기능이 추가되거나 변경 됐는�
 
 RxSwift 6를 확인하고 느낀점은 Swift에 Combine이 있지만, RxSwift를 이렇게 계속 보완/발전시키는걸 봐서는 RxSwift가 쉽게 Combine으로 대체되진 않을꺼란 생각이 드네요. 
 
-또 RxSwift의 main 메인테이너인 [Shai Mishali](https://twitter.com/freak4pc) 이분이 RxSwift뿐만아니라 Swift, Combine도 잘 하시는데, '역시 다른 언어를 잘하니 거기에서 이렇게 차용해 올 수 있구나?' 라는 생각도 했습니다. 너무 당연한 얘기지만요. 공부를 더 해야합니다. 😅
+또 RxSwift의 main 메인테이너인 [Shai Mishali](https://twitter.com/freak4pc) 이분은 RxSwift뿐만아니라 Swift, Combine도 잘 하시는데, '역시 다른 언어를 잘하니 거기에서 이렇게 차용해 올 수 있구나?' 라는 생각도 했습니다. 너무 당연한 얘기지만요. 공부를 더 해야합니다. 😅
 
 이상 포스트를 마치겠습니다.
 

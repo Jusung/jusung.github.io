@@ -108,7 +108,7 @@ extension Reactive where Base: MyView {
     }
 ```
 
-다음은 실제 프로퍼티를 `binding`하는 코드입니다.
+다음은 프로퍼티를 `binding`하는 코드입니다.
 
 ```swift
 viewModel.title.bind(to: myView.rx.title)
@@ -122,7 +122,7 @@ viewModel.icon.drive(myView.rx.icon)
 
 RxSwift 6에서는 어떤 클래스든 모든 프로퍼티를 자동으로 합성해 `Binding`이 가능한 Reactive extension을 제공해줍니다. 👍 
 
-이제 프로퍼티를 `Binding`하기 위해 생성한 `Reactive extension`는 코드에서 완전히 제거 할 수 있습니다. 
+이제 프로퍼티를 `Binding`하기 위해 생성한 Reactive extension을 코드에서 완전히 제거 할 수 있습니다. 
 
 앞으로 Xcode에서`AnyObject`를 상속하는 어떤 클래스에서든 `.rx`를 입력만 하면 즉각 자동으로 합성된 모든 프로퍼티의 `Binder`를 보실 수 있을 것입니다. 😆
 

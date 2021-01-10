@@ -9,7 +9,7 @@ comments: true
 published: true
 ---  
 
-RESTful API를 사용하는 앱 개발시 가장 흔하게 하는 작업 중 하나는 서버에서 내려주는 json 데이터를 인코딩하거나 디코딩하는 일입니다. Swift 4에서 지원하기 시작한 [Codable](https://developer.apple.com/documentation/swift/codable){:target="_blank"} 프로토콜을 사용하면 json 데이터를 쉽게 인코딩/디코딩 할 수 있습니다.
+RESTful API를 사용하는 앱 개발시 가장 흔하게 하는 작업 중 하나는 서버에서 내려주는 json 데이터를 디코딩하는 일입니다. Swift 4에서 지원하기 시작한 [Codable](https://developer.apple.com/documentation/swift/codable){:target="_blank"} 프로토콜을 사용하면 json 데이터를 쉽게 디코딩 할 수 있습니다.
 
 이번 포스트에서는 `Codable`(Decodable)을 사용해 json 데이터를 디코딩하는 3가지 방법에 대해 알아 보겠습니다.
 
@@ -58,7 +58,9 @@ let json = """
     "tagLine": "Happy Swift Coding"
 }
 """.data(using: .utf8)!
+```
 
+```swift
 // 모델이 Decodable을 준수하도록 지정
 struct Blog: Decodable {
     let name: String
@@ -183,8 +185,10 @@ snake-case로 돼 있는 json도 camel-case형태로 잘 디코딩 된 것을 �
 ```
 원본: fee_fi_fo_fum
 변경: feeFiFoFum 
+
 원본: feeFiFoFum
 변경: feeFiFoFum 
+
 원본: base_uri
 변경: baseUri
 ```

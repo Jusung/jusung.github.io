@@ -38,4 +38,4 @@ Xcode9 부터 맥과 기기(iPhone, iPad 등)를 케이블로 연결하지 않�
 
 👏 이제 무선으로 빌드를 더 편하게 할 수 있습니다. 😎
 
-<object data="{{ site.baseurl }}/images/2022/11.pdf" width="400" height="400" type='application/pdf'> </object>
+<object data="{{ site.baseurl }}/images/2022/11.pdf" width="100%" height="400" type='application/pdf'> </object>

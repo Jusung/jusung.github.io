@@ -20,17 +20,17 @@ avatar: https://jusung.github.io/images/profile.png
 # and URL Link(e.g. 'Theme' tab below) tabs. If you don't need one, just delete
 # it from the list(Delete '- name: ' and 'url: ', too!)
 navigation:
-  - name: About
+  - name: 소개
     url: /about
   - name: The Swift Language Guide (한국어)
     url: https://jusung.gitbook.io/the-swift-language-guide
-  - name: Archive
+  - name: 글 목록
     url: /archive
-  - name: Categories
+  - name: 카테고리
     url: /categories
-  - name: Tags
+  - name: 태그
     url: /tags
-  - name: RSS Feed
+  - name: RSS 피드
     url: https://jusung.github.io/feed.xml
 
 # Pagination
@@ -55,7 +55,7 @@ footer-links:
   youtube: # channel/<your_long_string> or user/<user-name>
 
 # Text under the icons in footer
-footer-text: © 2021 토미😎의 개발노트
+footer-text: © 2022 토미😎의 개발노트
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account

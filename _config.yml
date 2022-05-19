@@ -22,10 +22,6 @@ avatar: https://jusung.github.io/images/profile.png
 navigation:
   - name: About
     url: /about
-  - name: 일상 블로그 보기
-    url: /joyfulpace
-  - name: The Swift Language Guide (한국어)
-    url: https://jusung.gitbook.io/the-swift-language-guide
   - name: Archive
     url: /archive
   - name: Categories
@@ -34,6 +30,10 @@ navigation:
     url: /tags
   - name: RSS Feeds
     url: https://jusung.github.io/feed.xml
+  - name: 일상 블로그
+    url: /joyfulpace
+  - name: The Swift Language Guide (한국어)
+    url: https://jusung.gitbook.io/the-swift-language-guide
 
 # Pagination
 paginate: 5

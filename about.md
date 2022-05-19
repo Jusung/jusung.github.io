@@ -14,7 +14,7 @@ permalink: /about/
 
 문의가 있으신 분은 아래 연락처로 연락주세요.
 
-Twitter : http://twitter.com/kyejusung
+트위터 : http://twitter.com/kyejusung
 
-Email : kyejusung{at}gmail.com
+이메일 : kyejusung{at}gmail.com
 

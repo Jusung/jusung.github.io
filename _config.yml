@@ -20,19 +20,19 @@ avatar: https://jusung.github.io/images/profile.png
 # and URL Link(e.g. 'Theme' tab below) tabs. If you don't need one, just delete
 # it from the list(Delete '- name: ' and 'url: ', too!)
 navigation:
-  - name: 소개
+  - name: About
     url: /about
-  - name: 일상 블로그
+  - name: 일상 블로그 보기
     url: /joyfulpace
   - name: The Swift Language Guide (한국어)
     url: https://jusung.gitbook.io/the-swift-language-guide
-  - name: 글 목록
+  - name: Archive
     url: /archive
-  - name: 카테고리
+  - name: Categories
     url: /categories
-  - name: 태그
+  - name: Tags
     url: /tags
-  - name: RSS 피드
+  - name: RSS Feeds
     url: https://jusung.github.io/feed.xml
 
 # Pagination

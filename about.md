@@ -16,6 +16,8 @@ permalink: /about/
 
 - 번역: [The Swift Language Guide (한국어)](https://jusung.gitbook.io/the-swift-language-guide){:target="\_blank"}
 
+- 유튜브 : [깃미남](https://www.youtube.com/channel/UCkV2Fu0Q_XD6Ck767vzQImA)(Git 강의 채널)
+
 - 연락처
 	- [트위터](http://twitter.com/kyejusung){:target="\_blank"}
 	- 이메일  : kyejusung{at}gmail.com

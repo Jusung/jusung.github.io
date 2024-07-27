@@ -30,10 +30,12 @@ navigation:
     url: /tags
   - name: RSS Feeds
     url: https://jusung.github.io/feed.xml
-  - name: The Swift Language Guide (한국어)
-    url: https://jusung.gitbook.io/the-swift-language-guide
+  # - name: The Swift Language Guide (한국어)
+  #   url: https://jusung.gitbook.io/the-swift-language-guide
   - name: 일상 블로그
-    url: http://tommyk.tistory.com/
+    url: https://tommystory.net/
+  - name: mergeconflicts.com
+    url: https://www.mergeconflicts.com
 
 # Pagination
 paginate: 5

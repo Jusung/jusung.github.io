@@ -106,6 +106,7 @@ plugins:
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
   - jekyll-paginate
   - jekyll-seo-tag
+  - jekyll-remote-theme
 
 # Exclude these files from your production _site
 exclude:
@@ -116,5 +117,6 @@ exclude:
   - CNAME
 
 theme: jekyll-theme-cayman
+remote_theme: jekyll/minima
 
 future: false

@@ -34,8 +34,8 @@ navigation:
   #   url: https://jusung.gitbook.io/the-swift-language-guide
   - name: 일상 블로그
     url: https://tommystory.net/
-  - name: mergeconflicts.com
-    url: https://www.mergeconflicts.com
+  - name: Git 강의
+    url: https://gitminam.com
 
 # Pagination
 paginate: 5

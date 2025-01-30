@@ -5,7 +5,10 @@ permalink: /about/
 ---
 
 ## 블로그 이전
-https://www.tommystory.net 으로 블로그를 이전 했습니다.
+
+현재는 iOS개발자는 은퇴하고 Git 강사로 일하고 있습니다.
+
+운영중인 사이트: https://gitminam.com
 
 
 ## About Me

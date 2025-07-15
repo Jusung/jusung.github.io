@@ -15,6 +15,6 @@ published: true
 
 이 글의 내용은 아래 링크에서 확인해 주세요.
 
-[이 글 내용 보기](https://gitminam.com/ios/allsatisfy/)
+[이 글 내용 보기](https://gitminam.com/blog/ios/allsatisfy/)
 
 감사합니다 😃

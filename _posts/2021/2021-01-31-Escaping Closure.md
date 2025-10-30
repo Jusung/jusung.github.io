@@ -112,21 +112,11 @@ non-escaping 클로저는 컴파일러가 클로저의 실행이 언제 종료�
 **[참 고]**
 
 - [Closures](https://docs.swift.org/swift-book/LanguageGuide/Closures.html)
-
 - [escaping closures](https://developer.apple.com/forums/thread/71633)
-
 - [What is @escaping in Swift?](https://www.donnywals.com/what-is-escaping-in-swift/)
-
 - [Swift 3.0에 추가된 @noescape와 @escaping에 대해 살펴보자!](http://papasmf.blogspot.com/2016/12/swift-30-noescape-escaping.html)
-
 - [[swift] escaping closure](https://jintaewoo.tistory.com/41)
-
 - [What do mean @escaping and @nonescaping closures in Swift?](https://medium.com/swiftcommmunity/what-do-mean-escaping-and-nonescaping-closures-in-swift-d404d721f39d)
-
 - [Escaping & Non-Escaping Closures, Memory Management, and You](https://buildingvts.com/escaping-non-escaping-closures-memory-management-and-you-cb936c60a9d1)
-
 - [What is Escaping And Non-Escaping Closure in Swift?](https://www.c-sharpcorner.com/article/what-is-escaping-and-non-escaping-closure-in-swift/)
-
 - [How To: Escaping Closures In Swift With @escaping](https://learnappmaking.com/escaping-closures-swift/)
-
-- [Escaping and Non-Escaping Closures in Swift](https://medium.com/better-programming/escaping-and-non-escaping-closures-in-swift-fe2866309599)

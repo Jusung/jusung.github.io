@@ -239,4 +239,3 @@ public func share(replay: Int = 0, scope: SubjectLifetimeScope = .whileConnected
 - [RxJava Tip for the Day - Share, Publish, Refcount and All That Jazz](https://blog.kaush.co/2015/01/21/rxjava-tip-for-the-day-share-publish-refcount-and-all-that-jazz/)
 - [Connectable Observable Operators](https://github.com/ReactiveX/RxJava/wiki/Connectable-Observable-Operators#connectableobservablerefcount)
 - [ReactiveX - RefCount operator](http://reactivex.io/documentation/operators/refcount.html)
-- [RxSwift, subscriptions 의 공유](https://brunch.co.kr/@tilltue/15)
